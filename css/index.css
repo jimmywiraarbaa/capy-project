@@ -3,12 +3,18 @@
 :root{
     --primary: #181818;
     --secondary:#E6EB01;
+    --warning:#FFE609;
+    --white:#FFF9F9;
 
+    --fs-default:16px;
     --fs-brand:32px;
     --fs-nav:18px;
-    --fs-nav-btn:16px;
+    --fs-head-brand:81px;
+    --fs-title:24px;
 
     --border-radius-btn:10px;
+
+
 
 }
 *{
@@ -21,7 +27,7 @@
 /* Navbar */
 .navbar{
     background-color: var(--primary);
-    padding: 20px;
+    padding: 16px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -44,7 +50,7 @@
 .navbar-nav a{
     text-decoration: none;
     margin-right: 12px;
-    color: #E6EB01;
+    color: var(--secondary);
     font-size: var(--fs-nav);
 }
 
@@ -56,7 +62,7 @@
 
 .navbar .navbar-nav .btn{
     padding: 10px 32px;
-    font-size: var(--fs-nav-btn);
+    font-size: var(--fs-default);
     border-radius: var(--border-radius-btn);
     border-color: var(--secondary);
 }
@@ -76,19 +82,29 @@
     height: 100vh;
 }
 
-.hero .description{
-    width: 450px;
+#more{
+    display: none;
 }
 
 .hero-description h1{
-    color: var(--secondary);
+    color: var(--warning);
+    font-size: var(--fs-head-brand);
 }
 
 .hero .detail-description {
+    word-wrap: break-word;
     text-align: justify;
     font-size: 16px;
 }
 
+.hero .readmore{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.hero .readmore:hover{
+    cursor: pointer;
+}
 
 .hero .btn{
     padding: 10px 66px 10px 66px;
@@ -99,3 +115,24 @@
 }
 
 /* Hero */
+
+
+/* Test */
+.test{
+    margin-top: 38px;
+    height: 100vh;
+}
+
+.test h3{
+    text-align: center;
+    font-size: var(--fs-title);
+    font-weight: 700;
+}
+
+.test .btn{
+    padding: 10px 179px 10px 179px;
+    border-radius: var(--border-radius-btn);
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+/* Test */

@@ -15,65 +15,101 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="brand" href="#">Nexus</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav navbar-list decoration">
-                    <a class="navbar" href="#">Beranda</a>
-                    <a class="navbar" href="#">Bengkel</a>
-                    <a class="navbar" href="#">Suku Cadang</a>
-                    <a class="navbar" href="#">FaQ</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="brand" href="#">Nexus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav navbar-list decoration">
+                        <a class="navbar" href="#">Beranda</a>
+                        <a class="navbar" href="#">Bengkel</a>
+                        <a class="navbar" href="#">Suku Cadang</a>
+                        <a class="navbar" href="#">FaQ</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="btn" href="#">Sign In</a>
+                        <a class="login btn" href="#">Login</a>
+                    </div>
                 </div>
-                <div class="navbar-nav">
-                    <a class="btn" href="#">Sign In</a>
-                    <a class="login btn" href="#">Login</a>
-                </div>
-            </div>
 
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
     <!-- Navbar End -->
 
-    <!-- Hero Start-->
-    <div class="hero">
-        <div class="hero-description h-100">
-            <div class="d-flex p-5">
-                <div class="description text-white">
-                    <h1>Nexus</h1>
-                    <h2>Help your vehicle care!</h2>
-                    <p id="detail-text-short" class="detail-description">
-                        Nexus adalah platform inovatif yang dirancang untuk memudahkan pemilik sepeda motor dalam
-                        merawat dan memperbaiki
-                        kendaraan mereka. Dengan fitur pemantauan jarak tempuh motor dan algoritma cerdas, pengguna
-                        dapat menerima rekomendasi
-                        perawatan yang tepat waktu dan sesuai dengan kebutuhan kendaraan mereka. Selain itu, Nexus
-                        menyediakan integrasi dengan
-                        bengkel-bengkel mitra, memungkinkan
-                    </p>
-                    <p id="detail-text-full" class="detail-description" style="display: none;">
-                        pengguna untuk menemukan bengkel terdekat dan memperoleh layanan perbaikan dengan
-                        mudah. Admin bengkel mitra juga dapat mengelola inventaris suku cadang dan mempromosikan layanan
-                        mereka melalui fitur
-                        iklan yang disediakan. Dengan fokus pada kemudahan penggunaan, keandalan, dan kualitas layanan,
-                        Nexus bertujuan untuk
-                        menjadi teman setia bagi pemilik sepeda motor dalam menjaga kesehatan dan kinerja kendaraan
-                        mereka.
-                    </p>
-                    <a id="read-more-btn" onclick="tampilkanSelengkapnya()">Baca Selengkapnya</a>
-                    <div class="button">
-                        <a class="btn" href="#">Cek Motor Anda</a>
+    <main>
+        <!-- Hero Start-->
+        <section class="hero">
+            <div class="hero-description">
+                <div class="d-flex p-5">
+                    <div class="description text-white">
+                        <h1>Nexus</h1>
+                        <h2>Help your vehicle care!</h2>
+                        <div class="w-50">
+                            <p id="detail-text" class="detail-description">
+                                Nexus adalah platform inovatif yang dirancang untuk memudahkan pemilik sepeda motor
+                                dalam merawat dan memperbaiki
+                                kendaraan mereka. Dengan fitur pemantauan jarak tempuh motor dan algoritma cerdas,
+                                pengguna dapat menerima rekomendasi
+                                perawatan yang tepat waktu dan sesuai dengan kebutuhan kendaraan mereka. Selain itu,
+                                Nexus menyediakan integrasi dengan
+                                bengkel-bengkel mitra, memungkinkan<span id="dots">...</span><span id="more">pengguna
+                                    untuk menemukan bengkel terdekat dan
+                                    memperoleh layanan perbaikan dengan
+                                    mudah. Admin bengkel mitra juga dapat mengelola inventaris suku cadang dan
+                                    mempromosikan
+                                    layanan mereka melalui fitur
+                                    iklan yang disediakan. Dengan fokus pada kemudahan penggunaan, keandalan, dan
+                                    kualitas
+                                    layanan, Nexus bertujuan untuk
+                                    menjadi teman setia bagi pemilik sepeda motor dalam menjaga kesehatan dan kinerja
+                                    kendaraan mereka.</span>
+                            </p>
+                        </div>
+                        <a class="readmore" onclick="myFunction()" id="myBtn">Selengkapnya</a>
+                        <div class="button mt-4">
+                            <a class="btn" href="#">Cek Motor Anda</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <!-- Hero End-->
 
-    <!-- Hero End-->
+        <!-- Test Kendaraan Motor Start -->
+        <section class="test container">
+            <h3>Cek Kondisi Motor </h3>
+            <div class="form">
+                <form action="" method="">
+                    <label for="last-kilometer">Input KM Terakhir</label>
+                    <input class="form-control mb-4" type="number" name="">
+
+                    <label for="now-kilometer">Input KM Sekarang</label>
+                    <input class="form-control mb-4" type="number" name="">
+
+                    <label for="motorbike-type">Jenis Motor</label>
+                    <select class="form-select mb-4" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="matic">Matic</option>
+                        <option value="manual">Manual</option>
+                        <option value="clutch">Kopling</option>
+                    </select>
+
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Test Kendaraan Motor End -->
+    </main>
+
+    <footer>
+        <h1>ini Footer</h1>
+    </footer>
 
     <!-- Js Link -->
     <script src="js/script.js"></script>
