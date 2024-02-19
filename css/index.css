@@ -144,6 +144,8 @@ input::-webkit-inner-spin-button{
   border-radius: var(--border-radius-btn);
   background-color: var(--primary);
   color: var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
 }
 
 /* Test */
