@@ -2,6 +2,14 @@
 
 :root{
     --primary: #181818;
+    --secondary:#E6EB01;
+
+    --fs-brand:32px;
+    --fs-nav:18px;
+    --fs-nav-btn:16px;
+
+    --border-radius-btn:10px;
+
 }
 *{
     font-family: "Poppins", sans-serif;
@@ -9,6 +17,47 @@
 
 /* Navbar */
 .navbar{
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+.navbar .container{
+    padding: 0px;
+}
+
+.navbar .brand{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: var(--fs-brand);
+}
+
+.navbar-list{
+    margin: auto;
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    margin-right: 12px;
+    color: #E6EB01;
+    font-size: var(--fs-nav);
+}
+
+.navbar-nav a:last-child{
+    
+    margin-right: 0px;
+    
+}
+
+.navbar .navbar-nav .btn{
+    padding: 10px 32px;
+    font-size: var(--fs-nav-btn);
+    border-radius: var(--border-radius-btn);
+    border-color: var(--secondary);
+}
+
+.navbar-nav .login{
     color: var(--primary);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 /* Navbar */
