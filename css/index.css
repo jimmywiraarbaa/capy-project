@@ -19,6 +19,9 @@
 .navbar{
     background-color: var(--primary);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .container{
@@ -61,3 +64,9 @@
     border-color: var(--secondary);
 }
 /* Navbar */
+
+/* Hero */
+.hero{
+    background-image: url('images/hero-image.png');
+}
+/* Hero */
