@@ -23,11 +23,11 @@
 
 /* Navbar */
 .navbar {
-  background-color: var(--primary);
   padding: 16px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: var(--primary);
 }
 
 .navbar .container {
@@ -125,6 +125,13 @@
 
 .test .form {
   text-align: center;
+}
+
+.test .form input,
+.test .form select{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  border-radius: 12px;
 }
 
 .test .btn {
