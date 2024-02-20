@@ -148,4 +148,17 @@ input::-webkit-inner-spin-button{
   font-weight: 600;
 }
 
+.card-text {
+  text-align: left;
+}
+.card-text ul li {
+  list-style: none;
+}
+/* Test */
+
+.card {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+
 /* Test */
