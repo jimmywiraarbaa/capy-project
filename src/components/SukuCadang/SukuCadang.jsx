@@ -98,35 +98,6 @@ function SukuCadang() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 g-3 p-3">
-          <div className="card">
-            <img
-              src="./assets/bengkel1.jpeg"
-              className="card-img-top"
-              style={{ height: "200px", borderRadius: "16px 16px 0 0" }}
-              alt="..."
-            />
-            <div className="card-body">
-              <h5 className="card-title">
-                <b>Bengkel Jaya Motor </b>
-              </h5>
-              <p className="card-text">
-                <ul>
-                  <li>Parak Karakah, Padang Timur</li>
-                  <li>07.00-18.00 WIB</li>
-                  <li>08776653424</li>
-                </ul>
-              </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
-              >
-                More Detail
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
