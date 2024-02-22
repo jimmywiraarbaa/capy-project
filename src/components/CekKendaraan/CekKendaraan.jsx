@@ -1,11 +1,12 @@
 // import React from 'react'
+import './CekKendaraan.css';
 
 function CekKendaraan() {
   return (
     <section className="test container mt-6">
-      <h3 className="flex justify-center">
-        <b>Rekomendasi Perbaikan</b>
-      </h3>
+      <h2 className="flex justify-center">
+        Cek Kendaraan Anda
+      </h2>
       <div className="form flex justify-center" data-aos="zoom-in">
         <form action="" method="">
           <label
@@ -35,7 +36,7 @@ function CekKendaraan() {
           </select>
 
           <div className="text-center">
-            <button className="btn" type="submit">
+            <button className="button" type="submit">
               Submit
             </button>
           </div>

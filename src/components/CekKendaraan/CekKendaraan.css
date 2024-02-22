@@ -1,0 +1,35 @@
+:root {
+  --primary: #181818;
+  --secondary: #e6eb01;
+  --warning: #ffe609;
+  --white: #fff9f9;
+
+  --fs-default: 16px;
+  --fs-brand: 32px;
+  --fs-nav: 16px;
+  --fs-head-brand: 81px;
+  --fs-title: 24px;
+
+  --border-radius-btn: 10px;
+}
+
+h2{
+    font-size: var(--fs-title);
+    font-weight: 700;
+}
+
+form label{
+    font-size: var(--fs-default);
+    font-weight: 600;
+}
+
+.form-control{
+    border-radius: var(--border-radius-btn);
+}
+
+.button{
+    padding: 10px 179px 10px 179px;
+    background-color: var(--primary);
+    border-radius: var(--border-radius-btn);
+    color: var(--secondary);
+}
