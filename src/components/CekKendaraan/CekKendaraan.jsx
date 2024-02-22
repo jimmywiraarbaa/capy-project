@@ -1,12 +1,12 @@
 // import React from 'react'
-import './CekKendaraan.css';
+import "./CekKendaraan.css";
 
 function CekKendaraan() {
   return (
-    <section className="test container mt-6">
-      <h2 className="flex justify-center">
-        Cek Kendaraan Anda
-      </h2>
+    <section className="test container mt-10">
+      <h1 className="flex justify-center">
+        <b>Cek Kendaraan Anda</b>
+      </h1>
       <div className="form flex justify-center" data-aos="zoom-in">
         <form action="" method="">
           <label
@@ -15,12 +15,28 @@ function CekKendaraan() {
           >
             Input KM Terakhir
           </label>
-          <input className="form-control mb-4" type="number" name="" />
+          <input
+            className="form-control mb-4 "
+            type="number"
+            name=""
+            style={{
+              width: "26rem",
+              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
+            }}
+          />
 
           <label htmlFor="now-kilometer" style={{ display: "flex" }}>
             Input KM Sekarang
           </label>
-          <input className="form-control mb-4" type="number" name="" />
+          <input
+            className="form-control mb-4"
+            type="number"
+            name=""
+            style={{
+              width: "26rem",
+              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
+            }}
+          />
 
           <label htmlFor="motorbike-type " style={{ display: "flex" }}>
             Jenis Motor
@@ -28,6 +44,10 @@ function CekKendaraan() {
           <select
             className="form-select mb-4"
             aria-label="Default select example"
+            style={{
+              width: "26rem",
+              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
+            }}
           >
             <option selected>-- Select --</option>
             <option value="matic">Matic</option>
@@ -35,7 +55,7 @@ function CekKendaraan() {
             <option value="clutch">Kopling</option>
           </select>
 
-          <div className="text-center">
+          <div className="text-center mt-3">
             <button className="button" type="submit">
               Submit
             </button>
@@ -45,18 +65,21 @@ function CekKendaraan() {
       {/* Test Kendaraan Motor End */}
       {/* Alasan perlu */}
       <section
-        className="why-us flex justify-center mt-6"
+        className="why-us flex justify-center mt-16 mb-10"
         style={{ color: "var(--prima)" }}
       >
-        <div className="card w-96 shadow-md rounded-xl">
-          <div className="card-body text-center">
+        <div
+          className="card w-96 shadow-md rounded-xl"
+          style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)" }}
+        >
+          <div className="card-body text-center p-6">
             <h5 className="card-title">
               <b>Kendaraan anda perlu ganti oli?</b>
             </h5>
             <h6 className="card-subtitle mt-3 mb-3 text-blue-500 font-bold">
               <b>Estimasi Harga Rp 50.000-100.000</b>
             </h6>
-            <p className="card-text">
+            <p className="card-text text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               pariatur, sapiente eaque repellat voluptates tempore, vitae
               expedita commodi voluptate non ducimus sit quibusdam magni impedit
