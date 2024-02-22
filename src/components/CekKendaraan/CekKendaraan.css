@@ -27,7 +27,7 @@ form label{
     border-radius: var(--border-radius-btn);
 }
 
-.button{
+.test .button{
     padding: 10px 179px 10px 179px;
     background-color: var(--primary);
     border-radius: var(--border-radius-btn);
