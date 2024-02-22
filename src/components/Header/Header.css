@@ -13,7 +13,7 @@
   --border-radius-btn: 10px;
 }
 
-.hero{
+div .hero{
     background-image: url(../../../assets/hero-image.png);
     background-size: cover;
     height: 100vh;
@@ -42,7 +42,7 @@
     margin-top: 56px;
 }
 
-.hero .description .button a{
+.hero .button a{
     padding: 10px 66px 10px 66px;
     border: 2px solid var(--secondary);
     border-radius: var(--border-radius-btn);
