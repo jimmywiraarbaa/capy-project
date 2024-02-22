@@ -6,7 +6,7 @@
 
   --fs-default: 16px;
   --fs-brand: 32px;
-  --fs-nav: 18px;
+  --fs-nav: 16px;
   --fs-head-brand: 81px;
   --fs-title: 24px;
 
@@ -15,11 +15,30 @@
 
 /* NavBar */
 nav{
-    color: #181818;
+  position: sticky;
+  top: 0;
+    padding: 29px 60px;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
-p{
-    color: var(--primary);
+nav .list-nav a{
+  margin-right: 40px;
+  font-size: var(--fs-nav);
 }
 
+nav .buttons a{
+  margin-right: 29px;
+  padding: 10px 32px 10px 32px;
+  border-color: var(--secondary);
+  border-radius: var(--border-radius-btn);
+}
+nav .buttons a:last-child{
+  margin-right: 0px;
+}
+
+nav .buttons .login{
+  background-color: var(--secondary);
+  color: var(--primary);
+}
 /* NavBar */
