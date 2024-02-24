@@ -42,10 +42,11 @@ function CekKendaraan() {
             Jenis Motor
           </label>
           <select
-            className="form-select mb-4"
+            className="form-select mb-4 rounded p-2"
             aria-label="Default select example"
             style={{
               width: "26rem",
+              borderRadius: "10px",
               boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
             }}
           >
@@ -79,7 +80,7 @@ function CekKendaraan() {
             <h6 className="card-subtitle mt-3 mb-3 text-blue-500 font-bold">
               <b>Estimasi Harga Rp 50.000-100.000</b>
             </h6>
-            <p className="card-text text-center">
+            <p className="card-text text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               pariatur, sapiente eaque repellat voluptates tempore, vitae
               expedita commodi voluptate non ducimus sit quibusdam magni impedit
