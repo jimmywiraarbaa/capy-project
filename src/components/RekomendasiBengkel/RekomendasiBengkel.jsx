@@ -19,7 +19,7 @@ function RekomendasiBengkel() {
               style={{ height: "200px", borderRadius: "16px 16px 0 0" }}
               alt="..."
             />
-            <div className="card-body">
+            <div className=" card-body">
               <p className="mt-3">⭐⭐⭐⭐⭐</p>
               <h5 className="card-title mt-3">
                 <b>Aneka Motor</b>
@@ -31,13 +31,15 @@ function RekomendasiBengkel() {
                   <li>08776653424</li>
                 </ul>
               </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
-              >
-                More Detail
-              </a>
+              <div className="content-end">
+                <a
+                  href="#"
+                  className=""
+                  style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
+                >
+                  More Detail
+                </a>
+              </div>
             </div>
           </div>
         </div>
