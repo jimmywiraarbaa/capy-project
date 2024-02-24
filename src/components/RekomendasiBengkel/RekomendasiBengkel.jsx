@@ -1,5 +1,5 @@
 // import React from 'react'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function RekomendasiBengkel() {
   return (
@@ -33,13 +33,13 @@ function RekomendasiBengkel() {
                 </ul>
               </p>
               <div className="content-end">
-                <a
-                  to="/gallery"
+                <Link
+                  to="/bengkel"
                   className="text-white px-5 py-2"
                   style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
                 >
                   More Detail
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -64,13 +64,13 @@ function RekomendasiBengkel() {
                   <li>082388540724</li>
                 </ul>
               </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
+              <Link
+                to="/bengkel"
+                className="text-white px-5 py-2"
+                style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
               >
                 More Detail
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -94,13 +94,13 @@ function RekomendasiBengkel() {
                   <li>08776653424</li>
                 </ul>
               </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
+              <Link
+                to="/bengkel"
+                className="text-white px-5 py-2"
+                style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
               >
                 More Detail
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -124,13 +124,13 @@ function RekomendasiBengkel() {
                   <li>08776653424</li>
                 </ul>
               </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
+              <Link
+                to="/bengkel"
+                className="text-white px-5 py-2"
+                style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
               >
                 More Detail
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -162,13 +162,13 @@ function RekomendasiBengkel() {
                   <li>08776653424</li>
                 </ul>
               </p>
-              <a
-                href="#"
-                className="btn btn-primary"
-                style={{ borderRadius: "20px", alignItems: "right" }}
+              <Link
+                to="/bengkel"
+                className="text-white px-5 py-2"
+                style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
               >
                 More Detail
-              </a>
+              </Link>
             </div>
           </div>
         </div>
