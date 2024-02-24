@@ -1,4 +1,5 @@
 // import React from 'react'
+// import { Link } from "react-router-dom";
 
 function RekomendasiBengkel() {
   return (
@@ -33,8 +34,8 @@ function RekomendasiBengkel() {
               </p>
               <div className="content-end">
                 <a
-                  href="#"
-                  className=""
+                  to="/gallery"
+                  className="text-white px-5 py-2"
                   style={{ borderRadius: "20px", alignItems: "right", backgroundColor: "#172EFE" }}
                 >
                   More Detail
