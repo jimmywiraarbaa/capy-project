@@ -6,32 +6,17 @@ function Bengkel() {
     return (
         <div>
             <NavBar />
-            <h1>Bengkel</h1>
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
-            {/* disini kita buat semua kodingan tampilan */}
+            <div className='flex  border-b-2 border-black mt-10'>
+                <div className='p-10  hover:border-black hover:border-b-8'>
+                    <a className='' href="#">Galeri</a>
+                </div>
+                <div className='p-10'>
+                    <a className='' href="#">Galeri</a>
+                </div>
+            </div>
+            <div className='mt-4'>
+
+            </div>
             <Footer />
         </div>
     )
