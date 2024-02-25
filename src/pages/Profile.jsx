@@ -1,6 +1,7 @@
 // import React from 'react'
 import profile from '../../assets/profile-akun.jpg';
 import Logo from '../../assets/Logo.png';
+import { MdOutlineLogout } from "react-icons/md";
 
 function Profile() {
     return (
@@ -15,9 +16,11 @@ function Profile() {
                 <div className="flex justify-center">
                     <div className="border p-7 rounded-lg">
 
+                        <p><i data-feather="filter"></i></p>
                         <p>home</p>
-                        <p>home</p>
-                        <p>home</p>
+                        <p>
+                            <MdOutlineLogout />
+                        </p>
                     </div>
                     <div className='flex'>
                         <form action="" method="">
