@@ -3,94 +3,66 @@ import "./CekKendaraan.css";
 
 function CekKendaraan() {
   return (
-    <section className="test container mt-10">
-      <h1 className="flex justify-center">
-        <b>Cek Kendaraan Anda</b>
-      </h1>
-      <div className="form flex justify-center" data-aos="zoom-in">
-        <form action="" method="">
-          <label
-            htmlFor="last-kilometer"
-            style={{ marginTop: "20px", display: "flex" }}
-          >
-            Input KM Terakhir
-          </label>
-          <input
-            className="form-control mb-4 "
-            type="number"
-            name=""
-            style={{
-              width: "26rem",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
-            }}
-          />
+    <div>
+      <section className="test flex flex-col justify-center  items-center mt-12" id="cek">
+        <h1 className="text-2xl font-bold flex justify-center max-sm:text-xl">
+          Cek Kendaraan Anda
+        </h1>
+        <div className=" mt-5 w-96 max-sm:w-72">
+          <form action="" method="">
+            <div className="flex flex-col mb-6">
+              <label className="text-sm font-semibold mb-3" htmlFor="">Masukkan KM Terakhir</label>
+              <input className="rounded-xl drop-shadow-lg" type="number" />
+            </div>
 
-          <label htmlFor="now-kilometer" style={{ display: "flex" }}>
-            Input KM Sekarang
-          </label>
-          <input
-            className="form-control mb-4"
-            type="number"
-            name=""
-            style={{
-              width: "26rem",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
-            }}
-          />
+            <div className="flex flex-col mb-6">
+              <label className="text-sm font-semibold mb-3" htmlFor="">Masukkan KM Sekarang</label>
+              <input className="rounded-xl drop-shadow-lg" type="number" />
+            </div>
 
-          <label htmlFor="motorbike-type " style={{ display: "flex" }}>
-            Jenis Motor
-          </label>
-          <select
-            className="form-select mb-4 rounded p-2"
-            aria-label="Default select example"
-            style={{
-              width: "26rem",
-              borderRadius: "10px",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)",
-            }}
-          >
-            <option selected>-- Select --</option>
-            <option value="matic">Matic</option>
-            <option value="manual">Manual</option>
-            <option value="clutch">Kopling</option>
-          </select>
+            <div className="flex flex-col">
+              <label className="text-sm font-semibold mb-3" htmlFor="">Jenis Motor</label>
+              <select className="rounded-xl p-2" name="" id="">
+                <option className="max-sm:text-xl" value="">Matic</option>
+                <option value="">Manual</option>
+                <option value="">Kopling</option>
+              </select>
+            </div>
 
-          <div className="text-center mt-3">
-            <button className="button" type="submit">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-      {/* Test Kendaraan Motor End */}
-      {/* Alasan perlu */}
-      <section
-        className="why-us flex justify-center mt-16 mb-10"
-        style={{ color: "var(--prima)" }}
-      >
-        <div
-          className="card w-96 shadow-md rounded-xl"
-          style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)" }}
-        >
-          <div className="card-body text-center p-6">
-            <h5 className="card-title">
-              <b>Kendaraan anda perlu ganti oli?</b>
-            </h5>
-            <h6 className="card-subtitle mt-3 mb-3 text-blue-500 font-bold">
-              <b>Estimasi Harga Rp 50.000-100.000</b>
-            </h6>
-            <p className="card-text text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              pariatur, sapiente eaque repellat voluptates tempore, vitae
-              expedita commodi voluptate non ducimus sit quibusdam magni impedit
-              vel cupiditate.{" "}
-            </p>
-          </div>
+            <div className="flex justify-center mt-8 ">
+              <button className="bg-black rounded-lg py-2 text-yellow-400 w-3/4" type="submit">Cek</button>
+            </div>
+          </form>
         </div>
+        {/* Test Kendaraan Motor End */}
+        {/* Alasan perlu */}
+        <section
+          className="why-us flex justify-center mt-16 mb-10"
+          style={{ color: "var(--prima)" }}
+        >
+          <div
+            className="card w-96 shadow-md rounded-xl"
+            style={{ boxShadow: "0 2px 4px rgba(0, 0, 0, 0.4)" }}
+          >
+            <div className="card-body text-center p-6">
+              <h5 className="card-title">
+                <b>Kendaraan anda perlu ganti oli?</b>
+              </h5>
+              <h6 className="card-subtitle mt-3 mb-3 text-blue-500 font-bold">
+                <b>Estimasi Harga Rp 50.000-100.000</b>
+              </h6>
+              <p className="card-text text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                pariatur, sapiente eaque repellat voluptates tempore, vitae
+                expedita commodi voluptate non ducimus sit quibusdam magni impedit
+                vel cupiditate.{" "}
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* Alasan Perlu End */}
       </section>
-      {/* Alasan Perlu End */}
-    </section>
+    </div>
   );
 }
 

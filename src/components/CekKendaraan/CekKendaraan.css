@@ -12,24 +12,3 @@
 
   --border-radius-btn: 10px;
 }
-
-h2{
-    font-size: var(--fs-title);
-    font-weight: 700;
-}
-
-form label{
-    font-size: var(--fs-default);
-    font-weight: 600;
-}
-
-.form-control{
-    border-radius: var(--border-radius-btn);
-}
-
-.test .button{
-    padding: 10px 179px 10px 179px;
-    background-color: var(--primary);
-    border-radius: var(--border-radius-btn);
-    color: var(--secondary);
-}
