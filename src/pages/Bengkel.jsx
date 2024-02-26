@@ -16,7 +16,7 @@ function Bengkel() {
           {/* First image */}
           <div className="col-span-1">
             <img
-              src="/assets/aneka motor 6.png"
+              src="/assets/aneka motor 6.jpg"
               alt="."
               className="w-full rounded-lg hover:opacity-75"
             />
