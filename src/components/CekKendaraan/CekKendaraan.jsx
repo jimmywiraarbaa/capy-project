@@ -52,10 +52,9 @@ function CekKendaraan() {
                 <b>Estimasi Harga Rp 50.000-100.000</b>
               </h6>
               <p className="card-text text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                pariatur, sapiente eaque repellat voluptates tempore, vitae
-                expedita commodi voluptate non ducimus sit quibusdam magni impedit
-                vel cupiditate.{" "}
+                Pemeliharaan rutin kendaraan penting, termasuk penggantian oli. Estimasi biaya: Rp50.000-100.000. Perawatan ini
+                tidak hanya memastikan kinerja optimal mesin, tetapi juga melindungi dari keausan berlebihan dan mengurangi risiko kerusakan
+                mahal di masa mendatang.{" "}
               </p>
             </div>
           </div>
