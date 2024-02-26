@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Logo from '../../../assets/Logo.png';
 import Profile from '../../../assets/profile-akun.jpg';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,18 +18,18 @@ const Navbar = () => {
       </div>
       <div className={`w-full block ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto lg:justify-center`}>
         <div className="list-nav text-sm lg:flex-grow">
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          <Link to={'/'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Beranda
-          </a>
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          </Link>
+          <Link to={'/bengkel'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Bengkel
-          </a>
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          </Link>
+          <Link to={'/suku-cadang'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Suku Cadang
-          </a>
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          </Link>
+          <Link to={'/faq'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             FaQ
-          </a>
+          </Link>
         </div>
       </div>
       <div className={`w-full block ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto lg:justify-center`}>
@@ -36,8 +37,8 @@ const Navbar = () => {
           <img className='rounded-full w-14' src={Profile} alt="" />
         </div>
         <div className="buttons flex items-center">
-          <a href="#" className="inline-block text-sm px-4 py-2 leading-none border    hover:border-transparent hover:text-teal-500  mt-4 lg:mt-0">Daftar</a>
-          <a href="#" className="login inline-block text-sm px-4 py-2 leading-none  hover:bg-blue-600 mt-4 lg:mt-0">Masuk</a>
+          <Link to={'/register'} className="inline-block text-sm px-4 py-2 leading-none border  mt-4 lg:mt-0">Daftar</Link>
+          <Link to={'/login'} className="login inline-block text-sm px-4 py-2 leading-none  hover:bg-blue-600 mt-4 lg:mt-0">Masuk</Link>
         </div>
       </div>
     </nav>
