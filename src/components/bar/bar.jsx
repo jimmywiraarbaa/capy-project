@@ -28,7 +28,7 @@ function bar() {
               href="#"
               class="mitra inline-block text-sm leading-none border-2 rounded border-black hover:bg-blue-600 mt-4 lg:mt-0"
             >
-              <img src="./assets/Logo/share.svg" alt="" />
+              <img src="./assets/share.svg" alt="" />
             </a>
           </div>
         </div>
