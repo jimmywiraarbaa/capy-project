@@ -13,10 +13,9 @@
   --border-radius-btn: 10px;
 }
 
-div .hero{
+.hero{
     background-image: url(../../../assets/hero-image.png);
     background-size: cover;
-    height: 100vh;
 }
 
 .hero-description{
@@ -29,7 +28,6 @@ div .hero{
 }
 
 .hero h1{
-    font-size: 81px;
     color: var(--warning);
 }
 
