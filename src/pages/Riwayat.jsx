@@ -8,7 +8,6 @@ import { MdHistory } from "react-icons/md";
 import { MdOutlineHandshake } from "react-icons/md";
 import { BiEditAlt } from "react-icons/bi";
 import { SlCamera } from "react-icons/sl";
-import "../../src/components/css/profile.css";
 function Riwayat() {
   return (
     <div className="body">
