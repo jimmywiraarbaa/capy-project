@@ -14,6 +14,8 @@ input[type=number]::-webkit-outer-spin-button {
 :root {
   --primary: #181818;
   --secondary: #e6eb01;
+  --success: #172EFE;
+  --danger: #FF1E1E;
   --warning: #ffe609;
   --white: #fff9f9;
 }

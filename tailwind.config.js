@@ -9,6 +9,8 @@ export default {
       colors: {
         "primary-color": "var(--primary)",
         "secondary-color": "var(--secondary)",
+        "success-color": "var(--success)",
+        "danger-color": "var(--danger)",
         "warning-color": "var(--warning)",
       }
     },
