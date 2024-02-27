@@ -11,7 +11,14 @@ import "../../src/components/css/profile.css";
 function Profile() {
   return (
     <div className="body">
-      <div className="flex pt-19 pb-80 bg-black justify-center items-center">
+      <div
+        className="flex pt-19 pb-80 bg-black justify-center items-center"
+        style={{
+          "@media (max-width: 320px)": {
+            paddingBottom: "68rem",
+          },
+        }}
+      >
         <img
           className="items-center"
           src={Logo}
@@ -19,17 +26,21 @@ function Profile() {
           style={{ paddingTop: "3rem" }}
         />
       </div>
-      <div>
+      <div className="FOORM">
         <div
-          className="form border p-14 justify-center"
+          className="form border p-14 justify-center max-w-screen-sm mx-auto"
           style={{
             borderRadius: "25px",
             position: "absolute",
-            top: "151px",
-            left: "184px",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
             background: "white",
-            height: "36rem",
+            height: "auto", // Mengubah tinggi ke auto agar menyesuaikan konten
+            width: "90%", // Menggunakan persentase untuk lebar agar responsif
+            maxWidth: "54rem", // Menggunakan maxWidth agar tidak terlalu lebar pada layar besar
             boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
+            marginTop: "5rem",
           }}
         >
           <h1
@@ -38,16 +49,16 @@ function Profile() {
           >
             Profile Saya
           </h1>
-          <div className="flex justify-center">
+          <div className="namaform flex justify-center ">
             <div
-              className="border p-3 rounded-lg mr-32"
+              className="border p-3 rounded-lg mr-[3rem] max-sm:hidden"
               style={{
                 height: "24rem",
                 boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
               }}
             >
               <div
-                className="mb-6
+                className="logobar mb-6
             "
               >
                 <a href="#">
@@ -93,8 +104,8 @@ function Profile() {
                 </a>
               </div>
             </div>
-            <div className="flex">
-              <form action="" method="">
+            <div className="flex ">
+              <form className="flexbox max-sm:w-[23rem]" action="" method="">
                 <label className="font-normal" htmlFor="name">
                   Nama Lengkap
                 </label>
@@ -157,9 +168,11 @@ function Profile() {
 
                 <div className="tombol" style={{ marginTop: "4rem" }}>
                   <button
-                    className="rounded-lg bg-black text-yellow-300"
+                    className="rounded-lg bg-black text-yellow-300 max-sm:ml-[-26px]"
                     type="submit"
-                    style={{ padding: "10px 179px 10px 179px" }}
+                    style={{
+                      padding: "10px 179px", // Nilai padding ini akan diterapkan sebagai fallback
+                    }}
                   >
                     Simpan
                   </button>
@@ -167,8 +180,25 @@ function Profile() {
               </form>
             </div>
             <div className="flex justify-center">
-              <div className="flex relative w-44 h-44 bg-orange-500 justify-center items-center m-1 mr-2 text-xl rounded-full ml-7">
-                <img className="rounded-full" src={profile} alt="" />
+              <div
+                className="flex relative w-44 h-44 bg-orange-500 justify-center items-center m-1 mr-2 text-xl rounded-full ml-7 max-sm:hidden"
+                style={{
+                  "@media (max-width: 320px)": {
+                    width: "8rem",
+                    height: "8rem",
+                  },
+                }}
+              >
+                <img
+                  className="rounded-full"
+                  src={profile}
+                  alt=""
+                  style={{
+                    "@media (max-width: 320px)": {
+                      width: "8rem",
+                    },
+                  }}
+                />
                 <div className="bg-black rounded-full w-10 h-10 absolute bottom-0 right-5 flex items-center justify-center">
                   <button className="">
                     <SlCamera style={{ color: "yellow" }} />

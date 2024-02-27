@@ -1,3 +1,14 @@
 .body {
   height: 118vh;
 }
+
+@media (min-width: 320px) {
+  .form {
+    width: 23rem;
+    left: 23px;
+  }
+
+  .namaform {
+    display: none;
+  }
+}
