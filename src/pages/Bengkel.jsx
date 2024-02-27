@@ -10,7 +10,24 @@ function Bengkel() {
       <br />
       <Bar />
       <br />
-      {/* Gambar */}
+      <div className="bar flex  border-b-2 border-black mx-8 mb-8 gap-6">
+        <div className=" bar p-2  hover:border-black hover:border-b-8">
+          <a className="" href="#">
+            Galeri
+          </a>
+        </div>
+        <div className="p-2 hover:border-black hover:border-b-8">
+          <a className="" href="#">
+            Suku Cadang
+          </a>
+        </div>
+        <div className="p-2 hover:border-black hover:border-b-8">
+          <a className="" href="#">
+            Ulasan
+          </a>
+        </div>
+      </div>
+      {/* ======================= Gambar ========================================================== */}
       <div className="container mx-auto text-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {/* First image */}
