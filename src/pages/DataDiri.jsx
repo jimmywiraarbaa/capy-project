@@ -22,7 +22,7 @@ function DataDiri() {
                             </div>
 
                             <div className='border-b-2 border-primary-color mb-3'>
-                                <input className='border-none h-12 p-1 w-full' type="text" placeholder='Nama Lengkap' />
+                                <input className='border-none h-12 p-1 w-full focus:border-none' type="text" placeholder='Nama Lengkap' />
                             </div>
 
                             <div className='border-b-2 border-primary-color mb-3'>
