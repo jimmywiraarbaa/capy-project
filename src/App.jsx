@@ -13,6 +13,7 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import Riwayat from "./pages/Riwayat";
 import DataDiri from "./pages/DataDiri";
+import MitraDaftar from "./pages/mitra_daftar";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/data-diri" element={<DataDiri />} />
-
+          <Route path="/mitradaftar" element={<MitraDaftar />} />
           <Route path="/" element={<Home />} />
           <Route path="/bengkel" element={<Bengkel />} />
           <Route path="/profile" element={<Profile />} />
