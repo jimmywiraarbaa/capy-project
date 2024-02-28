@@ -19,190 +19,88 @@ function Riwayat() {
           style={{ paddingTop: "3rem" }}
         />
       </div>
-      <div className="FOORM">
-        <div
-          className="form border p-14 justify-center max-w-screen-sm mx-auto"
-          style={{
-            borderRadius: "25px",
-            position: "absolute",
-            top: "55%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            background: "white",
-            height: "auto", // Mengubah tinggi ke auto agar menyesuaikan konten
-            width: "90%", // Menggunakan persentase untuk lebar agar responsif
-            maxWidth: "54rem", // Menggunakan maxWidth agar tidak terlalu lebar pada layar besar
-            boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
-            marginTop: "5rem",
-          }}
-        >
-          <select
-            className="form-select md:ml-[41rem]"
-            aria-label="Default select example"
-            style={{ marginLeft: "41rem", borderRadius: "10px" }}
+      {/* ======= form ========== */}
+
+      <div
+        className="absolute border rounded-3xl top-32 inset-x-40  bg-white py-20 max-sm:py-14 max-sm:inset-x-5"
+        style={{ boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
+      >
+        <h1 className="text-xl font-semibold text-center mb-12 max-sm:text-lg">
+          Riwayat
+        </h1>
+        <div className="flex items-center max-sm:flex-col">
+          {/* Nav Ikon */}
+          <div
+            className="flex border drop-shadow-lg rounded-xl mr-[9rem] ml-20 max-sm:mr-0 max-sm:ml-0 max-sm:mb-10"
+            style={{ boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
           >
-            <option defaultValue> Tanggal</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <h1
-            className="text-center font-semibold"
-            style={{ marginBottom: "3rem", marginTop: "-1rem" }}
-          >
-            Riwayat
-          </h1>
-          <div className="namaform flex justify-center ">
-            <div
-              className="border p-3 rounded-lg mr-[4rem] max-sm:hidden"
-              style={{
-                height: "24rem",
-                boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
-                marginLeft: "-9rem",
-              }}
-            >
-              <div
-                className="logobar mb-6
-            "
-              >
-                <a href="#">
-                  <p
-                    className="rounded-full p-5"
-                    style={{ backgroundColor: "#B2B9C4" }}
-                  >
-                    <FaUser size={30} style={{ color: "#6C6C6C" }} />
-                  </p>
-                </a>
+            <div className="flex-col py-4 px-4 max-sm:flex max-sm:flex-row">
+              <div className="rounded-full p-4 bg-primary-color mb-8 max-sm:mr-5 max-sm:p-3 max-sm:mb-0">
+                <FaUser className="text-2xl text-secondary-color max-sm:text-lg" />
               </div>
-              <div className="mb-6">
-                <a href="#">
-                  <p
-                    className="rounded-full p-5"
-                    style={{ backgroundColor: "#B2B9C4" }}
-                  >
-                    <MdHistory size={30} style={{ color: "#6C6C6C" }} />
-                  </p>
-                </a>
+              <div className="rounded-full p-4 bg-primary-color mb-8 max-sm:mr-5 max-sm:p-3 max-sm:mb-0">
+                <MdHistory className="text-2xl text-secondary-color  max-sm:text-lg" />
               </div>
-              <div className="mb-6">
-                <a href="#">
-                  <p
-                    className="rounded-full p-5"
-                    style={{ backgroundColor: "#B2B9C4" }}
-                  >
-                    <MdOutlineHandshake
-                      size={30}
-                      style={{ color: "#6C6C6C" }}
-                    />
-                  </p>
-                </a>
+              <div className="rounded-full p-4 bg-primary-color mb-8 max-sm:mr-5 max-sm:p-3 max-sm:mb-0">
+                <MdOutlineHandshake className="text-2xl text-secondary-color max-sm:text-lg" />
               </div>
-              <div className="mb-6">
-                <a href="#">
-                  <p
-                    className="rounded-full p-5"
-                    style={{ backgroundColor: "#B2B9C4" }}
-                  >
-                    <MdOutlineLogout size={30} style={{ color: "#6C6C6C" }} />
-                  </p>
-                </a>
+              <div className="rounded-full p-4 bg-primary-color max-sm:p-3">
+                <MdOutlineLogout className="text-2xl text-secondary-color max-sm:text-lg" />
               </div>
             </div>
-            <div className="flex ">
-              <form className="flexbox max-sm:w-[23rem]" action="" method="">
-                <label className="font-normal" htmlFor="name">
-                  KM Sekarang
-                </label>
-                <div className="flex border-b-2 border-black justify-between mb-7">
-                  <div className="w-full">
-                    <input
-                      autoComplete="none"
-                      className="w-full border-none focus:outline-none shadow-none "
-                      type="text"
-                      id="name"
-                      style={{ outline: "none" }}
-                    />
-                  </div>
-                  <div>
-                    <button>
-                      <BiEditAlt size={30} />
-                    </button>
-                  </div>
-                </div>
+          </div>
+          {/* Nav Ikon */}
 
-                <label className="font-normal" htmlFor="name">
-                  KM Sebelum
-                </label>
-                <div className="flex border-b-2 border-black justify-between mb-7">
-                  <div className="w-full">
-                    <input
-                      autoComplete="none"
-                      className="w-full border-none focus:outline-none shadow-none "
-                      type="email"
-                      id="name"
-                      style={{ outline: "none" }}
-                    />
-                  </div>
-                  <div>
-                    <button>
-                      <BiEditAlt size={30} />
-                    </button>
-                  </div>
-                </div>
-
-                <label className="font-normal" htmlFor="name">
-                  Jenis Motor
-                </label>
-                <div className="flex border-b-2 border-black justify-between">
-                  <div className="w-full">
-                    <input
-                      autoComplete="none"
-                      className="w-full border-none focus:outline-none shadow-none "
-                      type="number"
-                      id="name"
-                      style={{ outline: "none" }}
-                    />
-                  </div>
-                  <div>
-                    <button>
-                      <BiEditAlt size={30} />
-                    </button>
-                  </div>
-                </div>
-                <br />
-                <label className="font-normal" htmlFor="name">
-                  Treatment
-                </label>
-                <div className="flex border-b-2 border-black justify-between">
-                  <div className="w-full">
-                    <input
-                      autoComplete="none"
-                      className="w-full border-none focus:outline-none shadow-none "
-                      type="number"
-                      id="name"
-                      style={{ outline: "none" }}
-                    />
-                  </div>
-                  <div>
-                    <button>
-                      <BiEditAlt size={30} />
-                    </button>
-                  </div>
-                </div>
-
-                <div className="tombol" style={{ marginTop: "4rem" }}>
-                  <button
-                    className="rounded-lg bg-black text-yellow-300 max-sm:ml-[-26px]"
-                    type="submit"
-                    style={{
-                      padding: "10px 179px", // Nilai padding ini akan diterapkan sebagai fallback
-                    }}
-                  >
-                    Simpan
+          {/* Form */}
+          <div className="w-96 mr-6 max-sm:mr-0 max-sm:w-auto max-sm:order-3">
+            <form action="">
+              <div className="mb-7">
+                <label htmlFor="name">KM Sekarang</label>
+                <div className="flex justify-between border-b-2 border-primary-color">
+                  <input className="border-none w-full" type="text" />
+                  <button>
+                    <BiEditAlt className="text-3xl font-thin" />
                   </button>
                 </div>
-              </form>
-            </div>
+              </div>
+
+              <div className="mb-7">
+                <label htmlFor="name">KM Sebelum</label>
+                <div className="flex justify-between border-b-2 border-primary-color">
+                  <input className="border-none w-full" type="text" />
+                  <button>
+                    <BiEditAlt className="text-3xl font-thin" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="mb-7">
+                <label htmlFor="name">Jenis Motor</label>
+                <div className="flex justify-between border-b-2 border-primary-color">
+                  <input className="border-none w-full" type="number" />
+                  <button>
+                    <BiEditAlt className="text-3xl font-thin" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="mb-7">
+                <label htmlFor="name">Treatment</label>
+                <div className="flex justify-between border-b-2 border-primary-color">
+                  <input className="border-none w-full" type="text" />
+                  <button>
+                    <BiEditAlt className="text-3xl font-thin" />
+                  </button>
+                </div>
+              </div>
+
+              <button
+                className="rounded-lg w-full py-2 mt-16 bg-primary-color text-secondary-color"
+                type="submit"
+              >
+                Simpan
+              </button>
+            </form>
           </div>
         </div>
       </div>
