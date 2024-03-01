@@ -89,43 +89,55 @@ function RekomendasiBengkel() {
         onMouseDown={mouseDownHandler(eleRefRekomendasi)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 mb-7 shadow-xl rounded-xl">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
-            <div className="mt-2 mx-5 mb-4 rounded-lg">
+            <div className="mt-2 mx-5 mb-4 rounded-lg w-72">
               <div className="rating flex justify-between items-center mb-2">
                 <div className="flex">
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="text-base fill-secondary-color max-sm:text-xs" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
                 </div>
                 <div className="flex">
-                  <div className="mr-2 p-0.5 rounded-full border-2 border-info-color">
-                    <TfiBookmark className="text-lg text-info-color outline-8 max-sm:text-xs" />
-                  </div>
+                  <Link className="mr-2 p-0.5 rounded-full border-2 border-info-color">
+                    <TfiBookmark className="text-lg text-info-color outline-8 max-sm:text-base" />
+                  </Link>
                   <div className="p-0.5 rounded-full border-2 border-info-color">
-                    <CiShare2 className="text-lg text-info-color outline-8 max-sm:text-xs" />
+                    <CiShare2 className="text-lg text-info-color outline-8 max-sm:text-base" />
                   </div>
                 </div>
               </div>
-              <h2 className="font-bold text-lg max-sm:text-lg">
+              <h2 className="font-bold text-lg max-sm:text-base">
                 Aneka Bengkel
               </h2>
               <div className="mt-3 max-sm:mt-1">
                 <div className="flex mb-1">
-                  <SlLocationPin className="mr-2" />
-                  <p className="text-xs">
-                    Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk
-                  </p>
-                </div>
-                <div className="flex mb-1">
-                  <LuClock3 className="mr-2" />
-                  <p className="text-xs">09.00-18.00 WIB</p>
+                  <div>
+                    <SlLocationPin className="mr-2" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-sm">
+                      Aru Lubeg, Lubuk Begalung vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+                    </p>
+                  </div>
                 </div>
                 <div className="flex">
-                  <IoCallOutline className="mr-2" />
-                  <p className="text-xs">081234543</p>
+                  <div className="mr-2">
+                    <LuClock3 />
+                  </div>
+                  <div className="mb-1">
+                    <p className="text-sm">09.00-18.00 WIB</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="mr-2">
+                    <IoCallOutline />
+                  </div>
+                  <div className="flex">
+                    <p className="text-sm">081234543</p>
+                  </div>
                 </div>
               </div>
               <div className="flex justify-end mt-3">
@@ -153,43 +165,55 @@ function RekomendasiBengkel() {
         onMouseDown={mouseDownHandler(eleRefFavorit)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 mb-7 shadow-xl rounded-xl">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
-            <div className="mt-2 mx-5 mb-4 rounded-lg">
+            <div className="mt-2 mx-5 mb-4 rounded-lg w-72">
               <div className="rating flex justify-between items-center mb-2">
                 <div className="flex">
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-xs" />
-                  <FaStar className="text-base fill-secondary-color max-sm:text-xs" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="mr-1 text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
+                  <FaStar className="text-base fill-secondary-color max-sm:text-base max-sm:mr-px" />
                 </div>
                 <div className="flex">
                   <Link className="mr-2 p-0.5 rounded-full border-2 border-info-color">
-                    <TfiBookmark className="text-lg text-info-color outline-8 max-sm:text-xs" />
+                    <TfiBookmark className="text-lg text-info-color outline-8 max-sm:text-base" />
                   </Link>
                   <div className="p-0.5 rounded-full border-2 border-info-color">
-                    <CiShare2 className="text-lg text-info-color outline-8 max-sm:text-xs" />
+                    <CiShare2 className="text-lg text-info-color outline-8 max-sm:text-base" />
                   </div>
                 </div>
               </div>
-              <h2 className="font-bold text-lg max-sm:text-lg">
+              <h2 className="font-bold text-lg max-sm:text-base">
                 Aneka Bengkel
               </h2>
               <div className="mt-3 max-sm:mt-1">
                 <div className="flex mb-1">
-                  <SlLocationPin className="mr-2" />
-                  <p className="text-xs">
-                    Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk
-                  </p>
-                </div>
-                <div className="flex mb-1">
-                  <LuClock3 className="mr-2" />
-                  <p className="text-xs">09.00-18.00 WIB</p>
+                  <div>
+                    <SlLocationPin className="mr-2" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <p className="text-sm">
+                      Aru Lubeg, Lubuk Begalung vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+                    </p>
+                  </div>
                 </div>
                 <div className="flex">
-                  <IoCallOutline className="mr-2" />
-                  <p className="text-xs">081234543</p>
+                  <div className="mr-2">
+                    <LuClock3 />
+                  </div>
+                  <div className="mb-1">
+                    <p className="text-sm">09.00-18.00 WIB</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="mr-2">
+                    <IoCallOutline />
+                  </div>
+                  <div className="flex">
+                    <p className="text-sm">081234543</p>
+                  </div>
                 </div>
               </div>
               <div className="flex justify-end mt-3">
