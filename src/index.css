@@ -18,6 +18,10 @@ input[type=email]:focus{
   outline: none;
 }
 
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
 
 :root {
   --primary: #181818;
