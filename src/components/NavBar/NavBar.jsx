@@ -33,9 +33,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`w-full block ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto lg:justify-center`}>
+        {/* User Sudah Login */}
         <div className=' items-center hidden'>
           <img className='rounded-full w-14' src={Profile} alt="" />
         </div>
+
+        {/* User Belum Login */}
         <div className="buttons flex items-center">
           <Link to={'/register'} className="inline-block text-sm px-4 py-2 leading-none border  mt-4 lg:mt-0">Daftar</Link>
           <Link to={'/login'} className="login inline-block text-sm px-4 py-2 leading-none  hover:bg-blue-600 mt-4 lg:mt-0">Masuk</Link>
