@@ -19,7 +19,7 @@ input[type=email]:focus{
 }
 
 .no-scrollbar::-webkit-scrollbar{
-  display: none;
+  width: 0px;
 }
 
 
