@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -14,10 +11,8 @@ export default {
         "warning-color": "var(--warning)",
         "info-color": "var(--info)",
         "primary-text": "var(--text)",
-      }
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-animated')
-  ],
-}
+  plugins: [require("tailwindcss-animated")],
+};
