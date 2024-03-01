@@ -88,7 +88,7 @@ function RekomendasiBengkel() {
         onMouseDown={mouseDownHandler(eleRefRekomendasi)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 shadow-xl mb-5 rounded-xl max-sm:w-1/2">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
             <div className="mt-2 mx-5 mb-4 rounded-lg">
               <div className="rating flex justify-between items-center mb-2">
@@ -142,7 +142,7 @@ function RekomendasiBengkel() {
         onMouseDown={mouseDownHandler(eleRefFavorit)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 shadow-xl mb-6 rounded-xl max-sm:w-1/2">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
             <div className="mt-2 mx-5 mb-4 rounded-lg">
               <div className="rating flex justify-between items-center mb-2">
@@ -154,9 +154,9 @@ function RekomendasiBengkel() {
                   <FaStar className="text-base fill-secondary-color max-sm:text-xs" />
                 </div>
                 <div className="flex">
-                  <div className="mr-2 p-0.5 rounded-full border-2 border-info-color">
+                  <Link className="mr-2 p-0.5 rounded-full border-2 border-info-color">
                     <TfiBookmark className="text-lg text-info-color outline-8 max-sm:text-xs" />
-                  </div>
+                  </Link>
                   <div className="p-0.5 rounded-full border-2 border-info-color">
                     <CiShare2 className="text-lg text-info-color outline-8 max-sm:text-xs" />
                   </div>
