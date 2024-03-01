@@ -7,27 +7,27 @@ function bar() {
           <h1 className="text-xl font-bold">Aneka Motor</h1>
           <p>Aru Lubeg, Lubuk Begalung Nan XX</p>
           <p className="mt-3 text-justify lg:w-96">
-            Bengkel Aneka Motor adalah tempat perbaikan dan perawatan motor dengan layanan yang komprehensif.
+            Bengkel Aneka Motor adalah tempat perbaikan dan perawatan motor
+            dengan layanan yang komprehensif.
           </p>
           <div className="BUTTONS flex flex-row items-center justify-center sm:flex-row sm:justify-start gap-4 mt-5 mb-10">
             <a
               href="#"
-              className="lokasi inline-block text-sm px-4 py-2 leading-none border-2 border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded bg-black"
+              className="lokasi inline-block text-sm px-4 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
               style={{ color: "#E6EB01" }}
             >
-              Lokasi
+              + Tambah Produk
             </a>
             <a
               href="#"
-              className="mitra inline-block text-sm px-4 py-2 leading-none border-2 rounded border-black hover:bg-blue-600 mt-4 lg:mt-0"
+              className="flex text-sm px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
             >
-              Hubungi Mitra
-            </a>
-            <a
-              href="#"
-              className="mitra inline-block text-sm leading-none border-2 rounded border-black hover:bg-blue-600 mt-4 lg:mt-0"
-            >
-              <img src="./assets/share.svg" alt="" />
+              {" "}
+              <img
+                src="./assets/Note1.svg"
+                className="w-5 h-4 text-secondary-color max-sm:text-lg"
+              />
+              Edit Profil
             </a>
           </div>
         </div>
