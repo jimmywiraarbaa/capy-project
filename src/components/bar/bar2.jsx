@@ -1,5 +1,5 @@
 // import React from 'react'
-function bar() {
+function bar2() {
   return (
     <div className="text-center border-2 rounded-lg  p-10 my-5">
       <div className="flex flex-col lg:flex-row ">
@@ -56,4 +56,4 @@ function bar() {
   );
 }
 
-export default bar;
+export default bar2;

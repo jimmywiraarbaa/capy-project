@@ -1,13 +1,13 @@
 // import React from 'react';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { TfiBookmark } from "react-icons/tfi";
 import { CiShare2 } from "react-icons/ci";
 import { SlLocationPin } from "react-icons/sl";
 import { LuClock3 } from "react-icons/lu";
 import { IoCallOutline } from "react-icons/io5";
-import Bengkel1 from '../../../assets/bengkel1.jpeg';
-import { Link } from 'react-router-dom';
+import Bengkel1 from "../../../assets/bengkel1.jpeg";
+import { Link } from "react-router-dom";
 
 function RekomendasiBengkel() {
   const eleRefRekomendasi = useRef(null);
@@ -18,20 +18,20 @@ function RekomendasiBengkel() {
       const ele = eleRef.current;
       if (!ele) return;
 
-      ele.style.cursor = 'grab';
-      ele.style.removeProperty('user-select');
+      ele.style.cursor = "grab";
+      ele.style.removeProperty("user-select");
     };
 
     const eleRekomendasi = eleRefRekomendasi.current;
     const eleFavorit = eleRefFavorit.current;
 
-    window.addEventListener('mouseleave', () => {
+    window.addEventListener("mouseleave", () => {
       mouseLeaveHandler(eleRekomendasi);
       mouseLeaveHandler(eleFavorit);
     });
 
     return () => {
-      window.removeEventListener('mouseleave', () => {
+      window.removeEventListener("mouseleave", () => {
         mouseLeaveHandler(eleRekomendasi);
         mouseLeaveHandler(eleFavorit);
       });
@@ -42,8 +42,8 @@ function RekomendasiBengkel() {
     const ele = eleRef.current;
     if (!ele) return;
 
-    ele.style.cursor = 'grabbing';
-    ele.style.userSelect = 'none';
+    ele.style.cursor = "grabbing";
+    ele.style.userSelect = "none";
 
     const pos = {
       left: ele.scrollLeft,
@@ -61,15 +61,15 @@ function RekomendasiBengkel() {
     };
 
     const mouseUpHandler = () => {
-      ele.style.cursor = 'grab';
-      ele.style.removeProperty('user-select');
+      ele.style.cursor = "grab";
+      ele.style.removeProperty("user-select");
 
-      document.removeEventListener('mousemove', mouseMoveHandler);
-      document.removeEventListener('mouseup', mouseUpHandler);
+      document.removeEventListener("mousemove", mouseMoveHandler);
+      document.removeEventListener("mouseup", mouseUpHandler);
     };
 
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
+    document.addEventListener("mousemove", mouseMoveHandler);
+    document.addEventListener("mouseup", mouseUpHandler);
   };
 
   return (
@@ -81,14 +81,15 @@ function RekomendasiBengkel() {
         <b>Rekomendasi Mitra</b>
       </p>
       {/* rekomendasi */}
-      <div className="rekomendasi flex overflow-auto whitespace-nowrap no-scrollbar"
+      <div
+        className="rekomendasi flex overflow-auto whitespace-nowrap no-scrollbar"
         id="container"
         ref={eleRefRekomendasi}
-        style={{ cursor: 'grab' }}
+        style={{ cursor: "grab" }}
         onMouseDown={mouseDownHandler(eleRefRekomendasi)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl mb-5 rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
             <div className="mt-2 mx-5 mb-4 rounded-lg">
               <div className="rating flex justify-between items-center mb-2">
@@ -108,11 +109,15 @@ function RekomendasiBengkel() {
                   </div>
                 </div>
               </div>
-              <h2 className="font-bold text-lg max-sm:text-lg">Aneka Bengkel</h2>
+              <h2 className="font-bold text-lg max-sm:text-lg">
+                Aneka Bengkel
+              </h2>
               <div className="mt-3 max-sm:mt-1">
                 <div className="flex mb-1">
                   <SlLocationPin className="mr-2" />
-                  <p className="text-xs">Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk</p>
+                  <p className="text-xs">
+                    Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk
+                  </p>
                 </div>
                 <div className="flex mb-1">
                   <LuClock3 className="mr-2" />
@@ -124,7 +129,12 @@ function RekomendasiBengkel() {
                 </div>
               </div>
               <div className="flex justify-end mt-3">
-                <Link to={'#'} className="rounded-full px-4 py-2 text-xs text-white bg-success-color max-sm:text-xs">Selengkapnya</Link>
+                <Link
+                  to={"#"}
+                  className="rounded-full px-4 py-2 text-xs text-white bg-success-color max-sm:text-xs"
+                >
+                  Selengkapnya
+                </Link>
               </div>
             </div>
           </div>
@@ -135,14 +145,15 @@ function RekomendasiBengkel() {
         <b>Bengkel Favorit</b>
       </p>
       {/* Bengkel Favorit */}
-      <div className="favorit flex overflow-x-auto whitespace-nowrap no-scrollbar"
+      <div
+        className="favorit flex overflow-x-auto whitespace-nowrap no-scrollbar"
         id="container"
         ref={eleRefFavorit}
-        style={{ cursor: 'grab' }}
+        style={{ cursor: "grab" }}
         onMouseDown={mouseDownHandler(eleRefFavorit)}
       >
         {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 shadow-xl mb-6 rounded-xl max-sm:w-1/2">
+          <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
             <div className="mt-2 mx-5 mb-4 rounded-lg">
               <div className="rating flex justify-between items-center mb-2">
@@ -162,11 +173,15 @@ function RekomendasiBengkel() {
                   </div>
                 </div>
               </div>
-              <h2 className="font-bold text-lg max-sm:text-lg">Aneka Bengkel</h2>
+              <h2 className="font-bold text-lg max-sm:text-lg">
+                Aneka Bengkel
+              </h2>
               <div className="mt-3 max-sm:mt-1">
                 <div className="flex mb-1">
                   <SlLocationPin className="mr-2" />
-                  <p className="text-xs">Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk</p>
+                  <p className="text-xs">
+                    Aru Lubeg, Lubuk Begalung ajjskdjkfsj dkfjdsk fjk
+                  </p>
                 </div>
                 <div className="flex mb-1">
                   <LuClock3 className="mr-2" />
@@ -178,7 +193,12 @@ function RekomendasiBengkel() {
                 </div>
               </div>
               <div className="flex justify-end mt-3">
-                <Link to={'#'} className="rounded-full px-4 py-2 text-xs text-white bg-success-color max-sm:text-xs">Selengkapnya</Link>
+                <Link
+                  to={"#"}
+                  className="rounded-full px-4 py-2 text-xs text-white bg-success-color max-sm:text-xs"
+                >
+                  Selengkapnya
+                </Link>
               </div>
             </div>
           </div>

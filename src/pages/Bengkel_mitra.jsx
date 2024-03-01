@@ -1,6 +1,6 @@
 // import React from 'react'
 import NavBar from "../components/NavBar/NavBar";
-import Bar from "../components/bar/bar";
+import Bar2 from "../components/bar/bar2";
 import Footer from "../components/Footer/Footer";
 import Gambar1 from "../../assets/bengkel8.jpg";
 import Gambar2 from "../../assets/aneka-motor-6.png";
@@ -15,7 +15,7 @@ function BengkelMitra() {
       <NavBar />
 
       <div className="px-10">
-        <Bar />
+        <Bar2 />
         <div className="bar flex  border-b-2 border-info-color mb-8 gap-8 max-sm:mb-5 max-sm:gap-5">
           <div className=" bar p-2  border-primary-color border-b-8">
             <a className="font-bold" href="#">
