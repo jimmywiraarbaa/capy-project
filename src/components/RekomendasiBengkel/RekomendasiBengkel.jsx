@@ -18,7 +18,7 @@ function RekomendasiBengkel() {
         <b>Rekomendasi Mitra</b>
       </p>
       {/* rekomendasi */}
-      <div className="rekomendasi flex overflow-x-scroll whitespace-nowrap no-scrollbar">
+      <div className="rekomendasi flex overflow-x-auto whitespace-nowrap no-scrollbar">
         {[...Array(15)].map((_, index) => (
           <div key={index} className="card ml-8 shadow-xl rounded-xl max-sm:w-1/2">
             <img className="rounded-t-xl" src={Bengkel1} alt="" />
