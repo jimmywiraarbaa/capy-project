@@ -9,10 +9,9 @@ function Footer() {
               <b>Nexus</b>
             </h1>
             <p className="mt-6">
-              Lorem ipsum dolor sit amet consectetur. Id sed malesuada dui massa
-              aliquet consectetur. Amet massa purus consectetur enim sapien
-              facilisi. Quis ut varius phasellus eu. Sed netus a tristique
-              iaculis.
+              platform daring untuk pemilik sepeda motor.
+              Mereka dapat mengecek perawatan berdasarkan kilometer
+              dan menemukan bengkel terdekat untuk layanan tersebut.
             </p>
             <h2 className="mt-6" style={{ color: "#e6eb01" }}>
               <b>Contact</b>
@@ -67,17 +66,17 @@ function Footer() {
               <b>Follow</b>
             </h2>
             <br />
-            <div class="footer__social inline-flex gap-x-8">
-              <a href="https://www.youtube.com/" class="footer__social-link">
+            <div className="footer__social inline-flex gap-x-8">
+              <a href="https://www.youtube.com/" className="footer__social-link">
                 <img src="./assets/youtube.svg" alt="" />
               </a>
-              <a href="https://www.x.com/" class="footer__social-link">
+              <a href="https://www.x.com/" className="footer__social-link">
                 <img src="./assets/x.svg" alt="" />
               </a>
-              <a href="https://facebook.com/" class="footer__social-link">
+              <a href="https://facebook.com/" className="footer__social-link">
                 <img src="./assets/Facebook.svg" alt="" />
               </a>
-              <a href="https://instagram.com/" class="footer__social-link">
+              <a href="https://instagram.com/" className="footer__social-link">
                 <img src="./assets/Instagram.svg" alt="" />
               </a>
             </div>

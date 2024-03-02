@@ -11,13 +11,18 @@ import Bengkel from "./pages/Bengkel";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import DataDiri from "./pages/DataDiri";
+
 import Profile from "./pages/Profile";
 import Riwayat from "./pages/Riwayat";
-import DataDiri from "./pages/DataDiri";
+
 import MitraDaftar from "./pages/mitra_daftar";
 import MitraTinjau from "./pages/mitra_tinjau";
+
 import BengkelMitra from "./pages/Bengkel_mitra";
 import SukuCadang from "./pages/sukucadang_mitra";
+import UlasanBengkel from "./pages/BengkelUlasan";
+
 
 function App() {
   return (
@@ -37,6 +42,9 @@ function App() {
 
           <Route path="/bengkelmitra" element={<BengkelMitra />} />
           <Route path="/sukucadangmitra" element={<SukuCadang />} />
+          <Route path="/ulasanmitra" element={<UlasanBengkel />} />
+
+
           <Route path="/profile" element={<Profile />} />
           <Route path="/riwayat" element={<Riwayat />} />
         </Routes>
