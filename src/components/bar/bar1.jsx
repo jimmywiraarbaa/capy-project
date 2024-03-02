@@ -11,29 +11,54 @@ function bar1() {
             dengan layanan yang komprehensif.
           </p>
           <div className="BUTTONS flex flex-row items-center justify-center sm:flex-row sm:justify-start gap-4 mt-5 mb-10">
-            <a
-              href="#"
-              className="lokasi inline-block text-sm px-10 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
-              style={{ color: "#E6EB01" }}
-            >
-              Lokasi
-            </a>
-            <a
-              href="#"
-              className="flex text-sm px-5 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
-            >
-              Hubungi Mitra
-            </a>
-            <a
-              href="#"
-              className="flex  px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
-            >
-              {" "}
-              <img
-                src="./assets/share.svg"
-                className="w-8 h-4 font text-secondary-color max-sm:text-lg "
-              />
-            </a>
+            {/* Jika Login Sebagai user ini yang tampil */}
+            <div className="flex">
+              <a
+                href="#"
+                className="lokasi mr-6 inline-block text-sm px-10 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
+                style={{ color: "#E6EB01" }}
+              >
+                Lokasi
+              </a>
+              <a
+                href="#"
+                className="flex mr-6 text-sm px-5 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
+              >
+                Hubungi Mitra
+              </a>
+              <a
+                href="#"
+                className="flex  px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
+              >
+                {" "}
+                <img
+                  src="./assets/share.svg"
+                  className="w-8 h-4 font text-secondary-color max-sm:text-lg "
+                />
+              </a>
+            </div>
+
+            {/* Jika Login Sebagai mitra ini yang tampil */}
+            <div className="flex hidden">
+              <a
+                href="#"
+                className="lokasi mr-8 inline-block text-sm px-4 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
+                style={{ color: "#E6EB01" }}
+              >
+                + Tambah Produk
+              </a>
+              <a
+                href="#"
+                className="flex text-sm px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
+              >
+                {" "}
+                <img
+                  src="./assets/Note1.svg"
+                  className="w-5 h-4 text-secondary-color max-sm:text-lg"
+                />
+                Edit Profil
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex lg:flex-row gap-9">

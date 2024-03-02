@@ -1,0 +1,16 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.intro .teks{
+    font-size: 7rem;
+    text-shadow: 
+    0 0 2px #0ea5e9,
+    0 0 4px #0ea5e9,
+    0 0 6px #0ea5e9,
+    0 0 15px #0ea5e9,
+    0 0 23px #0ea5e9,
+    0 0 36px #0ea5e9,
+    0 0 42px #0ea5e9,
+    0 0 67px #0ea5e9;
+}

@@ -1,13 +1,6 @@
 // import React from 'react'
 
-import profile from "../../assets/profile-akun.jpg";
 import Logo from "../../assets/Logo.png";
-import { FaUser } from "react-icons/fa";
-import { MdOutlineLogout } from "react-icons/md";
-import { MdHistory } from "react-icons/md";
-import { MdOutlineHandshake } from "react-icons/md";
-import { BiEditAlt } from "react-icons/bi";
-import { SlCamera } from "react-icons/sl";
 
 function MitraTinjau() {
   return (
@@ -37,6 +30,10 @@ function MitraTinjau() {
             />
           </div>
 
+          <div className="bor">
+
+          </div>
+
           <div className="flex rounded-full p-3 bg-primary-color mb-8 max-sm:mr-5 max-sm:p-3 max-sm:mb-0">
             <img
               src="./assets/search.svg"
@@ -51,10 +48,10 @@ function MitraTinjau() {
             />
           </div>
         </div>
-        <div class="text flex justify-center mt-[-1rem] items-center space-x-80 max-sm:space-x-14 font-normal max-sm:pt-[21px] max-sm:flex-row">
-          <p class="pb-1 ">Mendaftar</p>
-          <p class="pb-1">Isi Informasi</p>
-          <p class="pb-1 ">Terdaftar</p>
+        <div className="text flex justify-center mt-[-1rem] items-center space-x-80 max-sm:space-x-14 font-normal max-sm:pt-[21px] max-sm:flex-row">
+          <p className="pb-1 ">Mendaftar</p>
+          <p className="pb-1">Isi Informasi</p>
+          <p className="pb-1 ">Terdaftar</p>
         </div>
       </div>
       <div className=" text-justify flex-column justify-center mt-36 px-10">
