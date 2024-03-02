@@ -27,12 +27,12 @@ function SukuCadangUser() {
         <Bar />
         <div className="bar flex  border-b-2 border-info-color mb-8 gap-8 max-sm:mb-5 max-sm:gap-5">
           <div className=" bar p-2  ">
-            <a className="font-bold" href="#">
+            <a className="" href="/bengkel">
               Galeri
             </a>
           </div>
           <div className="bar p-2 border-primary-color border-b-8">
-            <a className="" href="#">
+            <a className="font-bold" href="#">
               Suku Cadang
             </a>
           </div>
@@ -63,7 +63,7 @@ function SukuCadangUser() {
                 </p>
                 <div className="mt-5">
                   <p className="card-text font-bold mt-2">Rp. 28.500</p>
-                  <div className="flex justify-end mt-[-30px]">
+                  <div className="flex justify-end mt-[-30px] max-sm:px-6 max-sm:mt-2">
                     <button
                       className=" btn-primary bg-success-color  px-8 py-1 rounded-2xl"
                       style={{ color: "white" }}
@@ -91,7 +91,7 @@ function SukuCadangUser() {
                 </p>
                 <div className="mt-5">
                   <p className="card-text font-bold mt-2">Rp. 670.000</p>
-                  <div className="flex justify-end mt-[-30px]">
+                  <div className="flex justify-end mt-[-30px] max-sm:px-6 max-sm:mt-2">
                     <button
                       className=" btn-primary bg-success-color  px-8 py-1 rounded-2xl"
                       style={{ color: "white" }}
@@ -119,7 +119,7 @@ function SukuCadangUser() {
                 </p>
                 <div className="mt-5">
                   <p className="card-text font-bold mt-2">Rp. 81.000</p>
-                  <div className="flex justify-end mt-[-30px]">
+                  <div className="flex justify-end mt-[-30px] max-sm:px-6 max-sm:mt-2">
                     <button
                       className=" btn-primary bg-success-color  px-8 py-1 rounded-2xl"
                       style={{ color: "white" }}
@@ -147,7 +147,7 @@ function SukuCadangUser() {
                 </p>
                 <div className="mt-5">
                   <p className="card-text font-bold mt-2">Rp. 81.000</p>
-                  <div className="flex justify-end mt-[-30px]">
+                  <div className="flex justify-end mt-[-30px] max-sm:px-6 max-sm:mt-2">
                     <button
                       className=" btn-primary bg-success-color  px-8 py-1 rounded-2xl"
                       style={{ color: "white" }}
@@ -177,7 +177,7 @@ function SukuCadangUser() {
 
                 <div className="mt-5">
                   <p className="card-text  font-bold mt-2">Rp. 92.500</p>
-                  <div className="flex justify-end mt-[-30px]">
+                  <div className="flex justify-end mt-[-30px] max-sm:px-6 max-sm:mt-2">
                     <button
                       className=" btn-primary bg-success-color  px-8 py-1 rounded-2xl"
                       style={{ color: "white" }}
