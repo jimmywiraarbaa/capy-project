@@ -20,7 +20,7 @@ import MitraDaftar from "./pages/mitra_daftar";
 import MitraTinjau from "./pages/mitra_tinjau";
 
 import BengkelMitra from "./pages/Bengkel_mitra";
-import SukuCadang from "./pages/sukucadang_mitra";
+import SukuCadangMitra from "./pages/sukucadang_mitra";
 import UlasanBengkel from "./pages/BengkelUlasan";
 import SukuCadangUser from "./pages/sukucadang_user";
 import BengkelList from "./pages/bengkel_list";
@@ -44,7 +44,7 @@ function App() {
           <Route path="/sukucadanguser" element={<SukuCadangUser />} />
 
           <Route path="/bengkelmitra" element={<BengkelMitra />} />
-          <Route path="/sukucadangmitra" element={<SukuCadang />} />
+          <Route path="/sukucadangmitra" element={<SukuCadangMitra />} />
           <Route path="/ulasanmitra" element={<UlasanBengkel />} />
 
           <Route path="/profile" element={<Profile />} />
