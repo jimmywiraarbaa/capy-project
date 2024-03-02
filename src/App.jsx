@@ -17,8 +17,8 @@ import DataDiri from "./pages/DataDiri";
 import MitraDaftar from "./pages/mitra_daftar";
 import MitraTinjau from "./pages/mitra_tinjau";
 import BengkelMitra from "./pages/Bengkel_mitra";
-import SukuCadang from "./pages/sukucadang_mitra";
 import SukuCadangUser from "./pages/sukucadang_user";
+import SukuCadangMitra from "./pages/Sukucadang_mitra";
 
 function App() {
   return (
@@ -33,8 +33,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bengkel" element={<Bengkel />} />
           <Route path="/bengkelmitra" element={<BengkelMitra />} />
-          <Route path="/sukucadangmitra" element={<SukuCadang />} />
           <Route path="/sukucadanguser" element={<SukuCadangUser />} />
+          <Route path="/sukucadangmitra" element={<SukuCadangMitra />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/riwayat" element={<Riwayat />} />
         </Routes>

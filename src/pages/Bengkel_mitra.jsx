@@ -13,7 +13,6 @@ function BengkelMitra() {
   return (
     <div>
       <NavBar />
-
       <div className="px-10">
         <Bar2 />
         <div className="bar flex  border-b-2 border-info-color mb-8 gap-8 max-sm:mb-5 max-sm:gap-5">
