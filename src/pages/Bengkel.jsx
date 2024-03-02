@@ -18,12 +18,12 @@ function Bengkel() {
         <Bar />
         <div className="bar flex  border-b-2 border-info-color mb-8 gap-8 max-sm:mb-5 max-sm:gap-5">
           <div className=" bar p-2  border-primary-color border-b-8">
-            <a className="font-bold" href="#">
+            <a className="font-bold" href="/bengkel">
               Galeri
             </a>
           </div>
           <div className="p-2">
-            <a className="" href="#">
+            <a className="" href="/sukucadanguser">
               Suku Cadang
             </a>
           </div>
