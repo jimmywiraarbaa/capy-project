@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { CiShare2 } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
+import { BiEditAlt } from "react-icons/bi";
 
 function bar1() {
   return (
@@ -16,7 +17,8 @@ function bar1() {
               Mereka dikenal sebagai produsen motor terkemuka yang menyediakan berbagai jenis kendaraan bermotor,
               mulai dari sepeda motor konvensional hingga skuter modern.</p>
           </div>
-          <div className="flex mt-5 max-sm:justify-between">
+          {/* Ini Login sebagai user bagian ini yang tampil */}
+          <div className="flex hidden mt-5 max-sm:justify-between">
             <Link to={"#"} className="flex justify-center items-center bg-primary-color text-secondary-color rounded-lg text-lg py-1.5 px-12 mr-7 max-sm:py-0.5 max-sm:px-5 max-sm:text-base max-sm:mr-3">
               Lokasi
             </Link>
@@ -29,7 +31,20 @@ function bar1() {
               <CiShare2 />
             </Link>
           </div>
-          <div></div>
+          {/* Ini Login sebagai user bagian ini yang tampil */}
+
+          {/* Ini Login sebagai Mitra bagian ini yang tampil */}
+          <div className="flex mt-5 max-sm:justify-between">
+            <Link to={"#"} className="flex justify-center items-center bg-primary-color text-secondary-color rounded-lg text-lg py-1.5 px-12 mr-7 max-sm:py-1 max-md:px-3 max-sm:text-base max-sm:mr-3">
+              + Tambah Produk
+            </Link>
+
+            <Link to={"#"} className="flex justify-center items-center border-2 border-primary-color rounded-lg px-5  mr-7 font-semibold max-sm:mr-3 max-sm:text-sm max-sm:py-1 max-md:px-3">
+              <BiEditAlt className="text-3xl mr-3" />
+              <p>Edit Profil</p>
+            </Link>
+          </div>
+          {/* Ini Login sebagai Mitra bagian ini yang tampil */}
         </div>
 
         <div className="flex justify-center items-center max-sm:mt-3">
