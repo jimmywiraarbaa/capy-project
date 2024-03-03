@@ -19,7 +19,7 @@ export default {
         "danger-color": "var(--danger)",
         "warning-color": "var(--warning)",
         "info-color": "var(--info)",
-        "primary-text": "var(--text)",
+        "white-text": "var(--text)",
       },
     },
   },

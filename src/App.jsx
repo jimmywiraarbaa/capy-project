@@ -1,11 +1,5 @@
-// import { useState } from 'react'
-// import NavBar from "./components/NavBar/NavBar";
-// import Header from "./components/Header/Header";
-// import Cek from "./components/CekKendaraan/CekKendaraan";
-// import RekomendasiBengkel from "./components/RekomendasiBengkel/RekomendasiBengkel";
-// import SukuCadang from "./components/SukuCadang/SukuCadang";
-// import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Bengkel from "./pages/Bengkel";
 
@@ -25,6 +19,7 @@ import UlasanBengkel from "./pages/BengkelUlasan";
 import SukuCadangUser from "./pages/sukucadang_user";
 import BengkelList from "./pages/bengkel_list";
 import SukuCadangList from "./pages/sukucadang_list";
+import ProfileMitra from "./pages/EditProfilMitra";
 
 function App() {
   return (
@@ -41,8 +36,8 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/bengkel" element={<Bengkel />} />
+          <Route path="/editprofilemitra" element={<ProfileMitra />} />
           <Route path="/sukucadanguser" element={<SukuCadangUser />} />
-
           <Route path="/bengkelmitra" element={<BengkelMitra />} />
           <Route path="/sukucadangmitra" element={<SukuCadangMitra />} />
           <Route path="/ulasanmitra" element={<UlasanBengkel />} />
