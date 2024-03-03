@@ -199,41 +199,45 @@ function MitraUlasan() {
                         </div>
                     </div>
                     <div className="commentInput flex flex-col justify-center items-center">
-                        <h2 className="font-semibold text-xl mb-3">Beri Rating</h2>
-                        <div className="flex">
-                            {[...Array(5)].map((star, indexStar) => {
-                                const currentRating = indexStar + 1;
-                                return (
-                                    <label key={indexStar}>
-                                        <input type="radio"
-                                            style={{ display: 'none' }}
-                                            name="rating"
-                                            value={currentRating}
-                                            onClick={() => setRating(currentRating)}
-                                        />
-                                        <FaStar
-                                            className="star mr-2"
-                                            size={30}
-                                            color={currentRating <= (hover || rating) ? "#FFE609" : "#B2B9C4"}
-                                            onMouseEnter={() => setHover(currentRating)}
-                                            onMouseLeave={() => setHover(null)}
-                                        />
-                                    </label>
-                                );
-                            })}
-                        </div>
 
-                        <div className="mt-10 mb-12 w-full">
-                            <form action="">
-                                <div className=" rounded-3xl h-40 outline-none border-none"
-                                    style={{ boxShadow: '2px 6px 22.5px 3px rgba(0, 0, 0, 0.13)' }}
-                                >
-                                    <textarea name="komentar" id="" placeholder="Tulis komentar..." className="rounded-3xl w-full p-6  border-none resize-none"></textarea>
-                                </div>
-                                <div className="flex justify-end mt-6">
-                                    <button className="bg-primary-color text-secondary-color text-xs rounded-xl px-7 py-2" type="submit">Kirim</button>
-                                </div>
-                            </form>
+                        {/* Inputan kalau yang login mitra maka berikan hidden*/}
+                        <div className="w-full flex flex-col justify-center items-center">
+                            <h2 className="font-semibold text-xl mb-3">Beri Rating</h2>
+                            <div className="flex">
+                                {[...Array(5)].map((star, indexStar) => {
+                                    const currentRating = indexStar + 1;
+                                    return (
+                                        <label key={indexStar}>
+                                            <input type="radio"
+                                                style={{ display: 'none' }}
+                                                name="rating"
+                                                value={currentRating}
+                                                onClick={() => setRating(currentRating)}
+                                            />
+                                            <FaStar
+                                                className="star mr-2"
+                                                size={30}
+                                                color={currentRating <= (hover || rating) ? "#FFE609" : "#B2B9C4"}
+                                                onMouseEnter={() => setHover(currentRating)}
+                                                onMouseLeave={() => setHover(null)}
+                                            />
+                                        </label>
+                                    );
+                                })}
+                            </div>
+
+                            <div className="mt-10 mb-12 w-full">
+                                <form action="">
+                                    <div className=" rounded-3xl h-40 outline-none border-none"
+                                        style={{ boxShadow: '2px 6px 22.5px 3px rgba(0, 0, 0, 0.13)' }}
+                                    >
+                                        <textarea name="komentar" id="" placeholder="Tulis komentar..." className="rounded-3xl w-full p-6  border-none resize-none"></textarea>
+                                    </div>
+                                    <div className="flex justify-end mt-6">
+                                        <button className="bg-primary-color text-secondary-color text-xs rounded-xl px-7 py-2" type="submit">Kirim</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
 
                         {komentar.slice(0, jumlahKomentar).map((_, indexComment) => (
