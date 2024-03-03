@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    'node_modules/flowbite-react/lib/esm/**/*.js',
+    "./index.html", "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
+    colors: {
+      yellow: {
+        '500': '#e6eb01'
+      }
+    },
     extend: {
       colors: {
+        "yellow": '#e6eb01',
         "primary-color": "var(--primary)",
         "secondary-color": "var(--secondary)",
         "success-color": "var(--success)",
@@ -14,5 +23,8 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [
+    require('flowbite/plugin'),
+    require("tailwindcss-animated")
+  ],
 };

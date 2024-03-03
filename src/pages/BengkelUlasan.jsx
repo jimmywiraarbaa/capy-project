@@ -9,7 +9,7 @@ function BengkelUlasan() {
     return (
         <div>
             <Navbar />
-            <div className="px-7">
+            <div className="px-7 max-sm:px-4">
                 <Bar />
                 <MitraUlasan />
             </div>

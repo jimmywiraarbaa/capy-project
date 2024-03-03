@@ -1,88 +1,55 @@
 // import React from 'react'
+import { Link } from "react-router-dom";
+
+import { CiShare2 } from "react-icons/ci";
+import { FaStar } from "react-icons/fa";
+
 function bar1() {
   return (
-    <div className="text-center border-2 rounded-lg  p-10 my-5">
-      <div className="flex flex-col lg:flex-row ">
-        <div className="Bengkel flex-auto lg:text-left">
-          <h1 className="text-xl font-bold">Aneka Motor</h1>
-          <p>Aru Lubeg, Lubuk Begalung Nan XX</p>
-          <p className="mt-3 text-justify lg:w-96">
-            Bengkel Aneka Motor adalah tempat perbaikan dan perawatan motor
-            dengan layanan yang komprehensif.
-          </p>
-          <div className="BUTTONS flex flex-row items-center justify-center sm:flex-row sm:justify-start gap-4 mt-5 mb-10">
-            {/* Jika Login Sebagai user ini yang tampil */}
-            <div className="flex">
-              <a
-                href="#"
-                className="lokasi mr-6 inline-block text-sm px-10 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
-                style={{ color: "#E6EB01" }}
-              >
-                Lokasi
-              </a>
-              <a
-                href="#"
-                className="flex mr-6 text-sm px-5 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
-              >
-                Hubungi Mitra
-              </a>
-              <a
-                href="#"
-                className="flex  px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
-              >
-                {" "}
-                <img
-                  src="./assets/share.svg"
-                  className="w-8 h-4 font text-secondary-color max-sm:text-lg "
-                />
-              </a>
-            </div>
+    <>
+      <div className="flex border border-primary-color rounded-3xl my-6 px-20 py-11 justify-between max-sm:flex-col max-sm:px-3 max-sm:py-6">
+        <div className="w-1/2 max-sm:w-full">
+          <div>
+            <h1 className="text-2xl font-bold mb-1 max-sm:text-center">Aneka Motor</h1>
+            <p className="mb-3 max-sm:text-center">Aru Lubeg, Lubuk Begalung</p>
+            <p className="text-justify text-ellipsis text-balance overflow-hidden ">Sebuah perusahaan yang bergerak di bidang industri otomotif.
+              Mereka dikenal sebagai produsen motor terkemuka yang menyediakan berbagai jenis kendaraan bermotor,
+              mulai dari sepeda motor konvensional hingga skuter modern.</p>
+          </div>
+          <div className="flex mt-5 max-sm:justify-between">
+            <Link to={"#"} className="flex justify-center items-center bg-primary-color text-secondary-color rounded-lg text-lg py-1.5 px-12 mr-7 max-sm:py-0.5 max-sm:px-5 max-sm:text-base max-sm:mr-3">
+              Lokasi
+            </Link>
 
-            {/* Jika Login Sebagai mitra ini yang tampil */}
-            <div className="flex hidden">
-              <a
-                href="#"
-                className="lokasi mr-8 inline-block text-sm px-4 py-4 leading-none border-2 font-black border-black hover:border-transparent hover:text-teal-500 mt-4 lg:mt-0 rounded-xl bg-black"
-                style={{ color: "#E6EB01" }}
-              >
-                + Tambah Produk
-              </a>
-              <a
-                href="#"
-                className="flex text-sm px-4 py-4 leading-none border-2 font-black rounded-xl gap-4 border-black hover:bg-blue-600 mt-4 lg:mt-0 "
-              >
-                {" "}
-                <img
-                  src="./assets/Note1.svg"
-                  className="w-5 h-4 text-secondary-color max-sm:text-lg"
-                />
-                Edit Profil
-              </a>
+            <Link to={"#"} className="flex justify-center items-center border-2 border-primary-color rounded-lg px-5  mr-7 font-semibold max-sm:mr-3 max-sm:text-sm max-sm:py-0.5">
+              Hubungi Kami
+            </Link>
+
+            <Link to={"#"} className="flex justify-center items-center text-3xl border-2 border-primary-color rounded-lg p-1.5 max-sm:p-0.5">
+              <CiShare2 />
+            </Link>
+          </div>
+          <div></div>
+        </div>
+
+        <div className="flex justify-center items-center max-sm:mt-3">
+          <div className="flex flex-col">
+            <div className="flex justify-center items-baseline">
+              <FaStar className="flex text-secondary-color text-3xl justify-center items-center mr-3 max-sm:text-2xl" />
+              <p className="flex justify-center items-center text-3xl font-bold max-sm:text-2xl">4.9</p>
             </div>
+            <p className="text-center mt-2">Rating & Ulasan</p>
+          </div>
+          <div className=" border-primary-color h-36 mx-14 max-sm:mx-4"
+            style={{ borderWidth: '1px' }}
+          ></div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-3xl font-bold max-sm:text-2xl">09.00-17.00</p>
+            <p className="mt-2">Jam Operasional</p>
           </div>
         </div>
-        <div className="flex lg:flex-row gap-9">
-          <div className="flex items-center justify-center">
-            <div className="lg:text-center">
-              <p className="font-black text-xl">
-                <b>⭐ 4.9</b>
-              </p>
-              <p>Rating & Ulasan</p>
-            </div>
-          </div>
-          <div className=" w-px bg-gray-400"></div>
-          <div className="flex items-center justify-center">
-            <div className="lg:text-center">
-              <p className="font-black text-xl">
-                <b>09:00 - 17:00</b>
-              </p>
-              <p>Jam operasional Bengkel</p>
-            </div>
-          </div>
-        </div>
-        <br />
       </div>
-    </div>
+    </>
   );
 }
 
