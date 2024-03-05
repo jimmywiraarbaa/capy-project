@@ -127,4 +127,4 @@ function SukuCadang() {
   );
 }
 
-export default SukuCadang;
+export default SukuCadang;
