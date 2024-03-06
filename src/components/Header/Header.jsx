@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <section className="hero relative bg-cover bg-center bg-no-repeat text-white max-sm:bg-cover">
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div className="max-w-xl ltr:sm:text-left rtl:sm:text-right">
+        <div className="max-w-xl ltr:sm:text-left animate-fade-right rtl:sm:text-right">
           <h1 className="text-8xl font-extrabold max-sm:text-6xl">
             Nexus
             <strong className="block mt-5 text-4xl font-extrabold text-white max-sm:text-2xl max-sm:mt-1"> Help your vehicle care! </strong>

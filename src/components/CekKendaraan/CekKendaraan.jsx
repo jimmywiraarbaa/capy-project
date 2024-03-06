@@ -4,7 +4,7 @@ import "./CekKendaraan.css";
 function CekKendaraan() {
   return (
     <div>
-      <section className="test flex flex-col justify-center  items-center mt-12" id="cek">
+      <section className="test flex flex-col justify-center animate-fade  items-center mt-12" id="cek">
         <h1 className="text-2xl font-bold flex justify-center max-sm:text-xl">
           Cek Kendaraan Anda
         </h1>

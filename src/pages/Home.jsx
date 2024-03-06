@@ -14,6 +14,7 @@ function Home() {
             <Rekomendasi />
             <SukuCadang />
             <Footer />
+
         </div>
     )
 }
