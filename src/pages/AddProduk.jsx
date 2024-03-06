@@ -35,14 +35,14 @@ function Profile() {
 
             {/* Parent Formulir */}
             <div
-                className="absolute border rounded-3xl top-32 inset-x-40 bg-white py-10 max-sm:py-6 max-sm:inset-x-5 max-sm:w-auto"
+                className="absolute border rounded-3xl top-32 inset-x-40 bg-white py-10 max-sm:py-6 max-sm:inset-x-5"
                 style={{ boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)" }}
             >
                 <h1 className="text-xl font-semibold text-center mb-12 max-sm:text-lg max-sm:mb-8">
                     Tambah Produk
                 </h1>
 
-                <div className="mx-40 max-sm:mx-7">
+                <div className="mx-40 max-sm:mx-7 max-lg:mx-7">
                     <form action="">
                         <div className='border-b-2 border-info-color mb-6 '>
                             <input className='border-none p-0 mt-1 w-full h-12 focus:border-none' name="name" type="text" placeholder="Nama Barang" required />
@@ -113,7 +113,7 @@ function Profile() {
 
             </div>
             {/* Parent Formulir */}
-            <div className="max-sm:h-20">
+            <div className="h-40 max-lg:h-1 max-sm:h-56">
 
             </div>
         </div>
