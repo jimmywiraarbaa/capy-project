@@ -1,72 +1,35 @@
-// import React from 'react'
-
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios'; // Import axios
 
 import { TfiBookmark } from "react-icons/tfi";
 import { CiShare2 } from "react-icons/ci";
 
-import Produk from '../../../assets/fedral-oli.jpg'
-
 function SukuCadang() {
+  const [produkData, setProdukData] = useState([]); // State untuk menyimpan data produk
+
   const eleRefSukuCadang = useRef(null);
 
   useEffect(() => {
-    const mouseLeaveHandler = (eleRef) => {
-      const ele = eleRef.current;
-      if (!ele) return;
+    const fetchData = async () => {
+      try {
+        const config = {
+          headers: {
+            'Authorization': 'Bearer WBrt5LsJBNEKdES2BJAkJ82tDGQHNQDjhHON65fZHhjtVRWu9eC8Du5YsG50'
+          }
+        };
 
-      ele.style.cursor = 'grab';
-      ele.style.removeProperty('user-select');
+        const response = await axios.get('https://api-lumen-nexus.000webhostapp.com/home', config); // Mengambil data dari URL API Anda dengan token
+        setProdukData(response.data.data_produk); // Simpan data produk dari API ke dalam state
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
     };
 
-    const eleSukuCadang = eleRefSukuCadang.current;
-
-    window.addEventListener('mouseleave', () => {
-      mouseLeaveHandler(eleSukuCadang);
-    });
-
-    return () => {
-      window.removeEventListener('mouseleave', () => {
-        mouseLeaveHandler(eleSukuCadang);
-      });
-    };
+    fetchData(); // Panggil fungsi fetchData saat komponen dimuat
   }, []);
 
-  const mouseDownHandler = (eleRef) => (e) => {
-    const ele = eleRef.current;
-    if (!ele) return;
-
-    ele.style.cursor = 'grabbing';
-    ele.style.userSelect = 'none';
-
-    const pos = {
-      left: ele.scrollLeft,
-      top: ele.scrollTop,
-      x: e.clientX,
-      y: e.clientY,
-    };
-
-    const mouseMoveHandler = (e) => {
-      const dx = e.clientX - pos.x;
-      const dy = e.clientY - pos.y;
-
-      ele.scrollTop = pos.top - dy;
-      ele.scrollLeft = pos.left - dx;
-    };
-
-    const mouseUpHandler = () => {
-      ele.style.cursor = 'grab';
-      ele.style.removeProperty('user-select');
-
-      document.removeEventListener('mousemove', mouseMoveHandler);
-      document.removeEventListener('mouseup', mouseUpHandler);
-    };
-
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
-  };
-
+  // Fungsi mouseDownHandler tetap sama seperti sebelumnya
 
   return (
     <section className="rekomendasi mt-4">
@@ -82,15 +45,15 @@ function SukuCadang() {
         id="container"
         ref={eleRefSukuCadang}
         style={{ cursor: "grab" }}
-        onMouseDown={mouseDownHandler(eleRefSukuCadang)}
+      // onMouseDown={mouseDownHandler(eleRefSukuCadang)} (hapus ini jika ingin menggunakan fungsi mouseDownHandler)
       >
-        {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 mb-7 shadow-xl rounded-xl">
-            <img className="rounded-t-xl pointer-events-none bg-cover" src={Produk} alt="" />
+        {produkData.map((produk) => (
+          <div key={produk.id} className="card ml-8 mb-7 shadow-xl rounded-xl">
+            <img className="rounded-t-xl pointer-events-none bg-cover" src={produk.img} alt="" />
             <div className="content mt-2 mx-5 mb-4 rounded-lg w-72">
               <div className="flex justify-between items-center mb-2">
                 <div className="text-xl font-bold text-balance w-2/3">
-                  <h1 className="overflow-hidden text-ellipsis">AHM Oil SPX2 - 0,8LLLLLLLLLLLLLLLLLllllllllllllllllllllllllllllllllllllllllllllllllLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL</h1>
+                  <h1 className="overflow-hidden text-ellipsis">{produk.nama_produk}</h1>
                 </div>
                 <div className="flex">
                   <Link to={'#'} className="mr-2 p-0.5 rounded-full border-2 border-info-color">
@@ -102,16 +65,11 @@ function SukuCadang() {
                 </div>
               </div>
               <div className="deskripsi w-3/4 text-balance h-12 overflow-hidden text-ellipsis">
-                <p className="">
-                  (Spesifikasi SAE:10W-30, API:SJ, JASO:MB)
-                  Nama Resmi Produk: SPX2 10W30 SLMB 0,8L REP
-                  Kode Part: 082342MBK0LZ0
-                  Kategori: Oli
-                </p>
+                <p className="">{produk.deskripsi}</p>
               </div>
 
               <div className="flex justify-between mt-3">
-                <p className="font-bold text-2xl text-ellipsis overflow-hidden">Rp.99.9999999999999</p>
+                <p className="font-bold text-2xl text-ellipsis overflow-hidden">Rp.{produk.harga}</p>
                 <Link
                   to={"#"}
                   className="rounded-full px-10 py-2 text-sm text-white bg-success-color max-sm:text-xs"

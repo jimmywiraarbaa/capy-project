@@ -1,53 +1,75 @@
-import { useState } from "react";
+// import React from "react";
+import Logo from "../../assets/Logo.png";
 
-const MitraPerlengkapanData = () => {
-    const [image, setImage] = useState(null);
-
-    const handleImageChange = (e) => {
-        const file = e.target.files[0];
-        if (file.size <= 1000000) {
-            setImage(file);
-        } else {
-            alert("Ukuran gambar harus kurang dari 1000KB");
-        }
-    };
-
+function FormRegistrasi() {
     return (
-        <div>
-            <h2>Nexus</h2>
-            <h3 className="text-center font-semibold">Terimakasih Telah Bergabung</h3>
-            <h3 className="text-center text-xs">Lengkapi informasi mengenai usaha Anda</h3>
-            <div className="flex justify-center mt-8">
-                <div className="rounded-lg shadow-xl bg-gray-50 lg:w-1/2">
-                    <div className="m-4">
-                        <label className="inline-block mb-2 text-gray-500">Upload Gambar Cover</label>
-                        <div className="flex items-center justify-center w-full">
-                            <label className="flex flex-col w-full h-32 border-4 border-dashed hover:bg-gray-100 hover:border-gray-300">
-                                <div className="flex flex-col items-center justify-center pt-7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-gray-400 group-hover:text-gray-600" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                                    </svg>
-                                    <p className="pt-1 text-sm tracking-wider text-gray-400 group-hover:text-gray-600">Silakan unggah gambar dengan ukuran kurang dari 1000KB</p>
+        <div className="container mx-auto text-center">
+            <div className="flex flex-col sm:flex-row">
+                <div className="sm:w-1/2 justify-center items-center hidden sm:flex">
+                    <img src={Logo} alt="Placeholder Image" />
+                </div>
+                <div className="sm:w-1/2 px-4 py-8 sm:p-0">
+                    <div className="bg-gray-900 rounded-lg p-8">
+                        <h2 className="text-xl font-semibold mb-4">
+                            Terima Kasih Telah Bergabung
+                        </h2>
+                        <p className="mb-4">Lengkapi informasi mengenai usaha Anda</p>
+                        <form>
+                            <div className="mb-4">
+                                <label htmlFor="coverPhoto" className="block text-white mb-1">
+                                    Upload gambar cover
+                                </label>
+                                <input
+                                    type="file"
+                                    className="form-control-file"
+                                    id="coverPhoto"
+                                />
+                                <small className="text-gray-400">
+                                    Ukuran file harus kurang dari 1000KB.
+                                </small>
+                            </div>
+                            <div className="mb-4 flex justify-between">
+                                <div className="w-full sm:w-1/2 pr-2">
+                                    <label htmlFor="jamBuka" className="block text-white mb-1">
+                                        Jam Buka
+                                    </label>
+                                    <select id="jamBuka" className="form-select">
+                                        <option selected>Pilih jam buka...</option>
+                                        {/* Tambahkan pilihan jam buka */}
+                                    </select>
                                 </div>
-                                <input type="file" className="opacity-0" onChange={handleImageChange} />
-                            </label>
-                        </div>
-                    </div>
-                    <div className="flex p-2 space-x-4">
-                        <button className="px-4 py-2 text-white bg-red-500 rounded shadow-xl">Batal</button>
-                        <button className="px-4 py-2 text-white bg-green-500 rounded shadow-xl">Buat</button>
+                                <div className="w-full sm:w-1/2 pl-2">
+                                    <label htmlFor="jamTutup" className="block text-white mb-1">
+                                        Jam Tutup
+                                    </label>
+                                    <select id="jamTutup" className="form-select">
+                                        <option selected>Pilih jam tutup...</option>
+                                        {/* Tambahkan pilihan jam tutup */}
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="deskripsi" className="block text-white mb-1">
+                                    Deskripsi
+                                </label>
+                                <textarea
+                                    className="form-textarea"
+                                    id="deskripsi"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                className="btn-primary font-bold w-full py-2"
+                            >
+                                Simpan
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <p>Jam Buka</p>
-            <p>Jam Tutup</p>
-            <p className="text-center">Deskripsi</p>
-            <center>
-                <textarea id="comment" name="comment" rows="4" cols="45"></textarea>
-            </center>
-            <br></br>
         </div>
     );
-};
+}
 
-export default MitraPerlengkapanData;
+export default FormRegistrasi;
