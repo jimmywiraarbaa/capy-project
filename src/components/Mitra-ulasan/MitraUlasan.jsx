@@ -83,7 +83,7 @@ function MitraUlasan() {
                                 </div>
 
                                 <div className="flex flex-col w-44 ">
-                                    <Progress progress={500} color="teal" />
+                                    <Progress progress={500} color="yellow" />
                                 </div>
 
                                 <div>

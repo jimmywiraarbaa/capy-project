@@ -1,0 +1,203 @@
+{
+    "data_produk": [
+        {
+            "id": 1,
+            "kategori_id": 1,
+            "user_id": 1,
+            "nama_produk": "Cara ubah dosa jadi saldo dana",
+            "harga": 20000,
+            "tautan": "Bambang nurjana",
+            "img": "marapi.jpg",
+            "deskripsi": "Barang yang sangat bagus untuk anda jadikan deban belinya dimanapun kapanpun dan dimanapu dan besok pagi lagi",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 2,
+            "kategori_id": 2,
+            "user_id": 1,
+            "nama_produk": "saldo dana",
+            "harga": 20000,
+            "tautan": "Bambang nurjana",
+            "img": "marapi.jpg",
+            "deskripsi": "Barang yang sangat bagus untuk anda jadikan deban belinya dimanapun kapanpun dan dimanapu dan besok pagi lagi",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 3,
+            "kategori_id": 1,
+            "user_id": 1,
+            "nama_produk": "Cara ubah dosa ",
+            "harga": 20000,
+            "tautan": "Bambang nurjana",
+            "img": "marapi.jpg",
+            "deskripsi": "Barang yang sangat bagus untuk anda jadikan deban belinya dimanapun kapanpun dan dimanapu dan besok pagi lagi",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 4,
+            "kategori_id": 1,
+            "user_id": 1,
+            "nama_produk": " jadi saldo dana",
+            "harga": 20000,
+            "tautan": "Bambang nurjana",
+            "img": "marapi.jpg",
+            "deskripsi": "Barang yang sangat bagus untuk anda jadikan deban belinya dimanapun kapanpun dan dimanapu dan besok pagi lagi",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        }
+    ],
+    "data_bengkel": [
+        {
+            "id": 1,
+            "nama_bengkel": "Bengkel Andi",
+            "user_id": 1,
+            "foto_bengkel": "bengkel.jpg",
+            "jam_buka": 9,
+            "jam_tutup": 18,
+            "nohp": "081234567",
+            "alamat": "Jalan Raya No. 123",
+            "link_gmaps": "http://gmaps.example.com/bengkel-andi",
+            "deskripsi": "Bengkel yang menyediakan layanan perbaikan kendaraan dengan cepat dan berkualitas.",
+            "rating": 0,
+            "review_count": 0,
+            "foto_galeri_1": null,
+            "foto_galeri_2": null,
+            "foto_galeri_3": null,
+            "foto_galeri_4": null,
+            "foto_galeri_5": null,
+            "foto_galeri_6": null,
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 2,
+            "nama_bengkel": "Bengkel Budi",
+            "user_id": 1,
+            "foto_bengkel": "bengkel.jpg",
+            "jam_buka": 8,
+            "jam_tutup": 17,
+            "nohp": "081234568",
+            "alamat": "Jalan Baru No. 456",
+            "link_gmaps": "http://gmaps.example.com/bengkel-budi",
+            "deskripsi": "Bengkel terpercaya dengan layanan yang ramah dan harga terjangkau.",
+            "rating": 0,
+            "review_count": 0,
+            "foto_galeri_1": null,
+            "foto_galeri_2": null,
+            "foto_galeri_3": null,
+            "foto_galeri_4": null,
+            "foto_galeri_5": null,
+            "foto_galeri_6": null,
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 3,
+            "nama_bengkel": "Bengkel Cipta Jaya",
+            "user_id": 1,
+            "foto_bengkel": "bengkel.jpg",
+            "jam_buka": 8,
+            "jam_tutup": 18,
+            "nohp": "081234569",
+            "alamat": "Jalan Utama No. 789",
+            "link_gmaps": "http://gmaps.example.com/bengkel-cipta-jaya",
+            "deskripsi": "Bengkel dengan tenaga mekanik berpengalaman dan peralatan terbaru.",
+            "rating": 0,
+            "review_count": 0,
+            "foto_galeri_1": null,
+            "foto_galeri_2": null,
+            "foto_galeri_3": null,
+            "foto_galeri_4": null,
+            "foto_galeri_5": null,
+            "foto_galeri_6": null,
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 4,
+            "nama_bengkel": "Bengkel Duta Motor",
+            "user_id": 1,
+            "foto_bengkel": "bengkel.jpg",
+            "jam_buka": 8,
+            "jam_tutup": 18,
+            "nohp": "081234570",
+            "alamat": "Jalan Lama No. 1011",
+            "link_gmaps": "http://gmaps.example.com/bengkel-duta-motor",
+            "deskripsi": "Bengkel spesialis perawatan dan perbaikan motor dengan harga terjangkau.",
+            "rating": 0,
+            "review_count": 0,
+            "foto_galeri_1": null,
+            "foto_galeri_2": null,
+            "foto_galeri_3": null,
+            "foto_galeri_4": null,
+            "foto_galeri_5": null,
+            "foto_galeri_6": null,
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 5,
+            "nama_bengkel": "Bengkel Eka Jaya",
+            "user_id": 1,
+            "foto_bengkel": "bengkel.jpg",
+            "jam_buka": 7,
+            "jam_tutup": 19,
+            "nohp": "081234571",
+            "alamat": "Jalan Sudirman No. 1213",
+            "link_gmaps": "http://gmaps.example.com/bengkel-eka-jaya",
+            "deskripsi": "Bengkel terpercaya dengan layanan terbaik dan harga bersaing.",
+            "rating": 0,
+            "review_count": 0,
+            "foto_galeri_1": null,
+            "foto_galeri_2": null,
+            "foto_galeri_3": null,
+            "foto_galeri_4": null,
+            "foto_galeri_5": null,
+            "foto_galeri_6": null,
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        }
+    ],
+    "data_komentar": [],
+    "data_kategori": [
+        {
+            "id": 1,
+            "nama_kategori": "Oli Mesin",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 2,
+            "nama_kategori": "Oli Gardan",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 3,
+            "nama_kategori": "Busi",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 4,
+            "nama_kategori": "Kampas Rem",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 5,
+            "nama_kategori": "Filter Udara",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        },
+        {
+            "id": 6,
+            "nama_kategori": "lainnya",
+            "created_at": "2024-03-08T09:39:26.000000Z",
+            "updated_at": "2024-03-08T09:39:26.000000Z"
+        }
+    ]
+}

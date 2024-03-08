@@ -32,7 +32,7 @@ function Login() {
                         <Link className="text-blue-400 underline underline-offset-4 max-sm:text-xs" to={'forgot-password'}>Lupa password?</Link>
 
                         <div className="mt-8 w-auto">
-                            <button className="bg-black text-yellow-300 rounded-2xl w-full py-3 text-xl max-sm:text-xs" type="submit">Daftar</button>
+                            <Link to={"/"} className="flex justify-center items-center bg-black text-yellow-300 rounded-2xl w-full py-3 text-xl max-sm:text-xs" type="submit">Masuk</Link>
                         </div>
                     </form>
                     <p className="text-center my-5 max-sm:text-xs">Atau masuk dengan</p>

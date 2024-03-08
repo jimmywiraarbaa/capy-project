@@ -1,0 +1,13 @@
+{
+    "user": [
+        {
+            "username": "sakura",
+            "email": "sakura@gmail.com",
+            "status": "User",
+            "api_token": "1234",
+            "updated_at": "2024-03-08T13:52:13.000000Z",
+            "created_at": "2024-03-08T13:52:13.000000Z",
+            "id": 2
+        }
+    ]
+}

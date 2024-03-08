@@ -1,69 +1,62 @@
-// import React from "react";
+// import React from 'react';
 import Logo from "../../assets/Logo.png";
 
-function FormRegistrasi() {
+function MitraPerlengkapanData() {
     return (
-        <div className="container mx-auto text-center">
-            <div className="flex flex-col sm:flex-row">
-                <div className="sm:w-1/2 justify-center items-center hidden sm:flex">
-                    <img src={Logo} alt="Placeholder Image" />
+        <div>
+            <div className="flex h-screen">
+                <div className="flex justify-center items-center w-2/4 bg-primary-color sm:flex">
+                    <img src={Logo} alt="" />
                 </div>
-                <div className="sm:w-1/2 px-4 py-8 sm:p-0">
-                    <div className="bg-gray-900 rounded-lg p-8">
-                        <h2 className="text-xl font-semibold mb-4">
-                            Terima Kasih Telah Bergabung
-                        </h2>
-                        <p className="mb-4">Lengkapi informasi mengenai usaha Anda</p>
-                        <form>
-                            <div className="mb-4">
-                                <label htmlFor="coverPhoto" className="block text-white mb-1">
-                                    Upload gambar cover
-                                </label>
+
+                <div className="w-full px-24 pt-5 max-sm:px-5 max-sm:pb-3">
+                    <h2 className="text-center font-bold">Terima Kasih Telah Bergabung</h2>
+                    <p className="text-center">Lengkapi informasi mengenai usaha Anda</p>
+                    <div className="form mt-5">
+                        <form className="" action="">
+                            <div className="form-group">
+                                <label htmlFor="coverPhoto" className="block">Upload gambar cover</label>
                                 <input
                                     type="file"
-                                    className="form-control-file"
+                                    className="form-control-file mt-4"
                                     id="coverPhoto"
                                 />
-                                <small className="text-gray-400">
-                                    Ukuran file harus kurang dari 1000KB.
-                                </small>
+                                <small className="block text-xs text-gray-500">Ukuran file harus kurang dari 1000KB.</small>
                             </div>
-                            <div className="mb-4 flex justify-between">
-                                <div className="w-full sm:w-1/2 pr-2">
-                                    <label htmlFor="jamBuka" className="block text-white mb-1">
-                                        Jam Buka
-                                    </label>
+
+                            <div className="form-row flex mt-5">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="jamBuka" className="block">Jam Buka</label>
                                     <select id="jamBuka" className="form-select">
                                         <option selected>Pilih jam buka...</option>
                                         {/* Tambahkan pilihan jam buka */}
                                     </select>
                                 </div>
-                                <div className="w-full sm:w-1/2 pl-2">
-                                    <label htmlFor="jamTutup" className="block text-white mb-1">
-                                        Jam Tutup
-                                    </label>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="jamTutup" className="block">Jam Tutup</label>
                                     <select id="jamTutup" className="form-select">
                                         <option selected>Pilih jam tutup...</option>
                                         {/* Tambahkan pilihan jam tutup */}
                                     </select>
                                 </div>
                             </div>
-                            <div className="mb-4">
-                                <label htmlFor="deskripsi" className="block text-white mb-1">
-                                    Deskripsi
-                                </label>
+
+                            <div className="form-group mt-5">
                                 <textarea
-                                    className="form-textarea"
+                                    className="form-control"
                                     id="deskripsi"
                                     rows="3"
                                 ></textarea>
                             </div>
-                            <button
-                                type="submit"
-                                className="btn-primary font-bold w-full py-2"
-                            >
-                                Simpan
-                            </button>
+
+                            <div className="flex justify-center items-center rounded-lg bg-primary-color mt-8 py-2">
+                                <button className="text-secondary-color font-bold" type="submit">
+                                    Simpan
+                                </button>
+                            </div>
+                            <div className="flex justify-center items-center mt-7 max-sm:mt-5">
+                                <a className="text-info-color underline" href="#">Nanti saja</a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -72,4 +65,4 @@ function FormRegistrasi() {
     );
 }
 
-export default FormRegistrasi;
+export default MitraPerlengkapanData;

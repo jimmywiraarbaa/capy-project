@@ -1,6 +1,7 @@
 // import React from 'react';
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 import { FaStar } from "react-icons/fa";
 import { TfiBookmark } from "react-icons/tfi";
@@ -16,7 +17,21 @@ function RekomendasiBengkel() {
   const eleRefRekomendasi = useRef(null);
   const eleRefFavorit = useRef(null);
 
+  const [bengkels, setBengkels] = useState([]);
+
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/data_bengkel");
+        console.log(response.data);
+        setBengkels(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+
     const mouseLeaveHandler = (eleRef) => {
       const ele = eleRef.current;
       if (!ele) return;
@@ -91,8 +106,8 @@ function RekomendasiBengkel() {
         style={{ cursor: "grab" }}
         onMouseDown={mouseDownHandler(eleRefRekomendasi)}
       >
-        {[...Array(15)].map((_, index) => (
-          <div key={index} className="card ml-8 mb-7 shadow-xl rounded-xl">
+        {bengkels && bengkels.map((bengkel) => (
+          <div key={bengkel.id} className="card ml-8 mb-7 shadow-xl rounded-xl">
             <img className="rounded-t-xl pointer-events-none" src={Bengkel1} alt="" />
             <div className="mt-2 mx-5 mb-4 rounded-lg w-72">
               <div className="rating flex justify-between items-center mb-2">
@@ -113,7 +128,7 @@ function RekomendasiBengkel() {
                 </div>
               </div>
               <h2 className="font-bold text-lg max-sm:text-base">
-                Aneka Bengkel
+                {bengkel.nama_bengkel}
               </h2>
               <div className="mt-3 max-sm:mt-1">
                 <div className="flex mb-1">
@@ -122,7 +137,7 @@ function RekomendasiBengkel() {
                   </div>
                   <div className="overflow-hidden">
                     <p className="text-sm">
-                      Aru Lubeg, Lubuk Begalung vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+                      {bengkel.alamat}
                     </p>
                   </div>
                 </div>
@@ -131,7 +146,7 @@ function RekomendasiBengkel() {
                     <LuClock3 />
                   </div>
                   <div className="mb-1">
-                    <p className="text-sm">09.00-18.00 WIB</p>
+                    <p className="text-sm">0{bengkel.jam_buka}.00-{bengkel.jam_tutup}.00 WIB</p>
                   </div>
                 </div>
                 <div className="flex">
@@ -139,7 +154,7 @@ function RekomendasiBengkel() {
                     <IoCallOutline />
                   </div>
                   <div className="flex">
-                    <p className="text-sm">081234543</p>
+                    <p className="text-sm">{bengkel.nohp}</p>
                   </div>
                 </div>
               </div>

@@ -21,10 +21,10 @@ const Navbar = () => {
           <Link to={'/'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Beranda
           </Link>
-          <Link to={'/bengkel'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          <Link to={'/bengkellist'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Bengkel
           </Link>
-          <Link to={'/suku-cadang'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
+          <Link to={'/sukucadanglist'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Suku Cadang
           </Link>
         </div>

@@ -1,14 +1,15 @@
 // import React from 'react'
 import NavBar from "../components/NavBar/NavBar";
-import Bar2 from "../components/bar/bar2";
+import Bar from "../components/bar/bar1";
 import Footer from "../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 function SukuCadangMitra() {
   return (
     <div>
       <NavBar />
       <div className="px-10">
-        <Bar2 />
+        <Bar />
         <div className="bar flex border-b-2 border-info-color mb-8 gap-8 max-sm:mb-5 max-sm:gap-5">
           <div className="bar p-2">
             <a className="" href="#">
@@ -21,9 +22,9 @@ function SukuCadangMitra() {
             </a>
           </div>
           <div className="p-2">
-            <a className="" href="#">
+            <Link className="" to={"/ulasanmitra"}>
               Ulasan
-            </a>
+            </Link>
           </div>
         </div>
         {/* ======================= Gambar ========================================================== */}

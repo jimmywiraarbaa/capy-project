@@ -2,19 +2,6 @@
 import NavBar from "../components/NavBar/NavBar";
 import Bar from "../components/bar/bar1";
 import Footer from "../components/Footer/Footer";
-import Gambar1 from "../../assets/bengkel8.jpg";
-import Gambar2 from "../../assets/aneka-motor-6.png";
-import Gambar3 from "../../assets/aneka-motor-5.png";
-import Gambar4 from "../../assets/aneka-motor-4.png";
-import Gambar5 from "../../assets/aneka-motor-3.png";
-import Gambar6 from "../../assets/aneka-motor-2.jpg";
-import { useRef, useEffect } from "react";
-import { FaStar } from "react-icons/fa";
-import { TfiBookmark } from "react-icons/tfi";
-import { CiShare2 } from "react-icons/ci";
-import { SlLocationPin } from "react-icons/sl";
-import { LuClock3 } from "react-icons/lu";
-import { IoCallOutline } from "react-icons/io5";
 
 import { Link } from "react-router-dom";
 
@@ -37,9 +24,9 @@ function SukuCadangUser() {
             </a>
           </div>
           <div className="p-2">
-            <a className="" href="#">
+            <Link className="" to={"/ulasanmitra"}>
               Ulasan
-            </a>
+            </Link>
           </div>
         </div>
         {/* ======================= Gambar ========================================================== */}
