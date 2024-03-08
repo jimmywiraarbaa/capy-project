@@ -21,6 +21,7 @@ import BengkelList from "./pages/bengkel_list";
 import SukuCadangList from "./pages/sukucadang_list";
 import ProfileMitra from "./pages/EditProfilMitra";
 import AddProdukMitra from "./pages/AddProduk";
+import MitraPerlengkapanData from "./pages/MitraPerlengkapanData";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
 
           <Route path="/mitradaftar" element={<MitraDaftar />} />
           <Route path="/mitratinjau" element={<MitraTinjau />} />
+          <Route path="/mitraperlengkapan" element={<MitraPerlengkapanData />} />
 
           <Route path="/" element={<Home />} />
 

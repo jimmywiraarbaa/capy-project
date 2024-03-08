@@ -27,9 +27,6 @@ const Navbar = () => {
           <Link to={'/suku-cadang'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
             Suku Cadang
           </Link>
-          <Link to={'/faq'} className="block mt-4 lg:inline-block lg:mt-0  hover:text-white ">
-            FaQ
-          </Link>
         </div>
       </div>
       <div className={`w-full block ${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto lg:justify-center`}>
