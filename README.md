@@ -14,7 +14,7 @@ Currently, two official plugins are available:
 Salin proyek ke komputer Anda dengan menjalankan perintah berikut di terminal:
 
 ```bash
-git clone [URL_Proyek]
+git clone https://github.com/jimmywiraarbaa/capy-project.git
 ```
 
 ## Langkah 2: Instalasi Tailwind CSS
