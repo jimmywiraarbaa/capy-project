@@ -6,6 +6,7 @@ import axios from "axios";
 
 import { TfiBookmark } from "react-icons/tfi";
 import { CiShare2 } from "react-icons/ci";
+// import { Produk } from "../../../assets/fedral-oli.jpg"
 
 function SukuCadang() {
   const eleRefSukuCadang = useRef(null);
@@ -98,7 +99,7 @@ function SukuCadang() {
       >
         {products && products.map((product) => (
           <div key={product.id} className="card ml-8 mb-7 shadow-xl rounded-xl">
-            <img className="rounded-t-xl pointer-events-none bg-cover" src={product.img} alt="" />
+            <img className="rounded-t-xl pointer-events-none bg-cover" src="../../../assets/fedral-oli.jpg" alt="" />
             <div className="content mt-2 mx-5 mb-4 rounded-lg w-72">
               <div className="flex justify-between items-center mb-2">
                 <div className="text-xl font-bold text-balance w-2/3">
